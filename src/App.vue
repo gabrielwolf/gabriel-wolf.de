@@ -1,21 +1,51 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <v-app>
+    <v-content>
+      <v-container>
+        <v-layout>
+          <v-flex>
+            <router-link to="/">Home</router-link> |
+            <router-link to="/impressum">Impressum</router-link> |
+            <router-link to="/copyleft">Copyleft</router-link> |
+            <router-link to="/datenschutz">Datenschutz</router-link>
+          </v-flex>
+        </v-layout>
+      </v-container>
+      <router-view></router-view>
+    </v-content>
+  </v-app>
 </template>
+
+<script>
+export default {
+  name: "App",
+  data() {
+    return {};
+  }
+};
+</script>
+
 <style lang="stylus">
+*
+  word-wrap break-word
+  word-break break-word;
+  hyphens auto;
+
+h1
+  margin-bottom 3rem
+
+h2
+  margin-bottom 2rem
+
+h3
+  margin-bottom 1rem
+
 #app
-  font-family 'Avenir', Helvetica, Arial, sans-serif
+  font-family 'Saira', Helvetica, Arial, sans-serif
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   text-align center
-  color #2c3e50
-#nav
-  padding 30px
+
   a
     font-weight bold
     color #2c3e50
