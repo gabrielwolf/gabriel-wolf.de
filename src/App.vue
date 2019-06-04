@@ -1,17 +1,17 @@
 <template>
   <v-app>
+    <v-system-bar app status fixed color="primary" justify-space-around>
+      <router-link to="/">Home</router-link>
+      <router-link to="/impressum">Impressum</router-link>
+      <router-link to="/copyleft">Copyleft</router-link>
+      <router-link to="/datenschutz">Datenschutz</router-link>
+    </v-system-bar>
     <v-content>
       <v-container>
         <v-layout>
-          <v-flex>
-            <router-link to="/">Home</router-link> |
-            <router-link to="/impressum">Impressum</router-link> |
-            <router-link to="/copyleft">Copyleft</router-link> |
-            <router-link to="/datenschutz">Datenschutz</router-link>
-          </v-flex>
+          <v-flex><router-view></router-view></v-flex>
         </v-layout>
       </v-container>
-      <router-view></router-view>
     </v-content>
   </v-app>
 </template>
@@ -48,7 +48,12 @@ h3
 
   a
     font-weight bold
-    color #2c3e50
+    color #42b983
     &.router-link-exact-active
       color #42b983
+
+  .v-system-bar a
+    margin auto
+    color #eee !important
+    text-decoration none
 </style>
