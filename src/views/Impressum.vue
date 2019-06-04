@@ -10,7 +10,8 @@
           10551&nbsp;Berlin<br /><br />
         </address>
         030&nbsp;36726963<br />
-        <a href="mailto:hi@gabriel-wolf.de">hi@gabriel-wolf.de</a><br /><br />
+        <a href="mailto:info@gabriel-wolf.de">info@gabriel-wolf.de</a
+        ><br /><br />
         <a href="https://twitter.com/wolfzeitlos" class="twitter-icon">
           <v-icon medium>mdi-twitter</v-icon></a
         >
@@ -19,9 +20,9 @@
   </v-container>
 </template>
 
-<style lang="stylus">
+<style scoped lang="stylus">
 .twitter-icon
   text-decoration: none
 .v-icon
-  color dimgrey !important
+  color #42b983
 </style>
