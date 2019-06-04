@@ -11,10 +11,22 @@
       </template>
       <div>
         <img
+          v-if="event.extension == 'jpg'"
           :src="`media/${event.url}`"
           :title="event.title"
           class="img-responsive ma-0"
         />
+        <audio
+          v-if="event.extension == 'wav'"
+          controls
+          preload="metadata"
+          :title="event.title"
+        >
+          <source :src="`media/${event.url}`" type="audio/wav" />
+        </audio>
+        <video v-if="event.extension == 'mp4'" class="img-responsive">
+          <source :src="`media/${event.url}`" type="video/mp4" />
+        </video>
       </div>
     </v-timeline-item>
   </v-timeline>
