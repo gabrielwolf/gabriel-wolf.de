@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-system-bar app color="primary" class="switch-bar" height="35px"
+    <v-system-bar app color="primary" class="switch-bar"
       ><v-switch light></v-switch>
     </v-system-bar>
     <v-content>
@@ -15,7 +15,7 @@
       justify-space-around
       color="primary"
       class="menu-bar"
-      height="35px"
+      height="39px"
     >
       <router-link to="/">Home</router-link>
       <router-link to="/impressum">Impressum</router-link>
@@ -73,6 +73,9 @@ h3
 
   .menu-bar > *
     margin auto
+
+  .switch-bar
+    padding 1.5rem 1.5rem 1.35rem 1.5rem
 
   .v-input__control
     margin auto
