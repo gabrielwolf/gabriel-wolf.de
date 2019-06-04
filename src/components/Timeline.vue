@@ -9,13 +9,12 @@
       <template v-slot:opposite>
         <span>{{ event.datetime }} Uhr</span>
       </template>
-      <div class="py-5">
+      <div>
         <img
-          :src="`media/${event.datetime}_${event.title}.${event.extension}`"
+          :src="`media/${event.url}`"
+          :title="event.title"
+          class="img-responsive ma-0"
         />
-        <h2 :class="`headline font-weight-light mb-0 ${event.title}--text`">
-          {{ event.title }}
-        </h2>
       </div>
     </v-timeline-item>
   </v-timeline>
@@ -36,4 +35,10 @@ export default {
 };
 </script>
 
-<style scoped lang="stylus"></style>
+<style scoped lang="stylus">
+.v-timeline-item__body *
+  display block
+
+.img-responsive
+  max-width 100%
+</style>
