@@ -1,10 +1,7 @@
 <template>
   <v-app>
-    <v-system-bar app status fixed color="primary" justify-space-around>
-      <router-link to="/">Home</router-link>
-      <router-link to="/impressum">Impressum</router-link>
-      <router-link to="/copyleft">Copyleft</router-link>
-      <router-link to="/datenschutz">Datenschutz</router-link>
+    <v-system-bar app color="primary" class="switch-bar" height="35px"
+      ><v-switch light></v-switch>
     </v-system-bar>
     <v-content>
       <v-container>
@@ -13,6 +10,18 @@
         </v-layout>
       </v-container>
     </v-content>
+    <v-system-bar
+      app
+      justify-space-around
+      color="primary"
+      class="menu-bar"
+      height="35px"
+    >
+      <router-link to="/">Home</router-link>
+      <router-link to="/impressum">Impressum</router-link>
+      <router-link to="/copyleft">Copyleft</router-link>
+      <router-link to="/datenschutz">Datenschutz</router-link>
+    </v-system-bar>
   </v-app>
 </template>
 
@@ -51,10 +60,20 @@ h3
     color #42b983
     text-decoration none
 
-  .v-system-bar a
-    margin auto
-    color #dedede
+  .v-system-bar
+    a
+      color #dedede
 
-    &.router-link-exact-active
-      color #fff
+      &.router-link-exact-active
+        color #fff
+
+  .menu-bar
+    bottom 0
+    top auto
+
+  .menu-bar > *
+    margin auto
+
+  .v-input__control
+    margin auto
 </style>
