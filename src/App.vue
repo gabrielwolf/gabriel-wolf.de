@@ -49,11 +49,12 @@ h3
   a
     font-weight bold
     color #42b983
-    &.router-link-exact-active
-      color #42b983
+    text-decoration none
 
   .v-system-bar a
     margin auto
-    color #eee !important
-    text-decoration none
+    color #dedede
+
+    &.router-link-exact-active
+      color #fff
 </style>
