@@ -1,0 +1,15 @@
+..:: Notizen ::..
+
+- Frontend: UI
+  - Klasse dense für Viewportbreiten unter 400px zuweisen
+  - Icons (Bild, Klavier, Text, Video) mit Klasse media-type verbandeln
+  - Darkmode
+
+- Frontend: Funktionalität
+  - Textdateien dynamisch lesen. JSON?
+
+- Mediendateien
+  - Textdateien mit Python in JSON-Dateien wandeln (Sind nachher leichter zu lesen)
+  - Schema um Klasse media-type erweitern
+    - Tests aktualisieren
+  - Makefile
