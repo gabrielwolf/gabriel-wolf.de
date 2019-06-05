@@ -8,7 +8,7 @@
     >
       <div>
         <figure>
-          <div>{{ event.datetime }} Uhr</div>
+          <div class="date">{{ event.datetime }} Uhr</div>
           <img
             v-if="event.extension == 'jpg'"
             :src="`media/${event.url}`"
@@ -67,4 +67,7 @@ export default {
 
 .not-visible
   visibility hidden
+
+.date, figcaption
+  color #777
 </style>
