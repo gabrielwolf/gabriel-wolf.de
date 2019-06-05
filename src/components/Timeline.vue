@@ -1,32 +1,38 @@
 <template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
-  <v-timeline>
+  <v-timeline dense>
     <v-timeline-item
       v-for="(event, i) in json.events"
       :key="i"
-      :color="event.title"
+      color="primary"
       small
     >
-      <template v-slot:opposite>
-        <span>{{ event.datetime }} Uhr</span>
-      </template>
       <div>
-        <img
-          v-if="event.extension == 'jpg'"
-          :src="`media/${event.url}`"
-          :title="event.title"
-          class="img-responsive ma-0"
-        />
-        <audio
-          v-if="event.extension == 'wav'"
-          controls
-          preload="metadata"
-          :title="event.title"
-        >
-          <source :src="`media/${event.url}`" type="audio/wav" />
-        </audio>
-        <video v-if="event.extension == 'mp4'" class="img-responsive">
-          <source :src="`media/${event.url}`" type="video/mp4" />
-        </video>
+        <figure>
+          <div>{{ event.datetime }} Uhr</div>
+          <img
+            v-if="event.extension == 'jpg'"
+            :src="`media/${event.url}`"
+            :title="event.title"
+            class="timeline-image"
+          />
+          <audio
+            v-if="event.extension == 'wav'"
+            controls
+            preload="metadata"
+            :title="event.title"
+            class="timeline-audio"
+          >
+            <source :src="`media/${event.url}`" stype="audio/wav" />
+          </audio>
+          <video
+            v-if="event.extension == 'mp4'"
+            controls
+            class="timeline-video"
+          >
+            <source :src="`media/${event.url}`" type="video/mp4" />
+          </video>
+          <figcaption>{{ event.title }}</figcaption>
+        </figure>
       </div>
     </v-timeline-item>
   </v-timeline>
@@ -38,7 +44,7 @@ export default {
     json: []
   }),
   created: function() {
-    fetch("/media.json")
+    fetch("/media/media.json")
       .then(r => r.json())
       .then(json => {
         this.json = json;
@@ -51,6 +57,14 @@ export default {
 .v-timeline-item__body *
   display block
 
-.img-responsive
+.timeline-image, .timeline-video, .timeline-audio
   max-width 100%
+  margin 0 auto
+  vertical-align middle
+
+.timeline-audio
+  display inline-block !important
+
+.not-visible
+  visibility hidden
 </style>
