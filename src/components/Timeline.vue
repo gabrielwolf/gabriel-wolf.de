@@ -9,14 +9,14 @@
       <div>
         <figure>
           <div class="date">{{ event.datetime }} Uhr</div>
-          <img
-            v-if="event.extension == 'jpg'"
+          <image-item
+            v-if="event.extension === 'jpg'"
             :src="`media/${event.url}`"
             :title="event.title"
             class="timeline-image"
           />
           <audio
-            v-if="event.extension == 'wav'"
+            v-if="event.extension === 'wav'"
             controls
             preload="metadata"
             :title="event.title"
@@ -25,7 +25,7 @@
             <source :src="`media/${event.url}`" stype="audio/wav" />
           </audio>
           <video
-            v-if="event.extension == 'mp4'"
+            v-if="event.extension === 'mp4'"
             controls
             class="timeline-video"
           >
@@ -39,6 +39,8 @@
 </template>
 
 <script>
+import ImageItem from "@/components/ImageItem.vue";
+
 export default {
   data: () => ({
     json: []
@@ -49,6 +51,9 @@ export default {
       .then(json => {
         this.json = json;
       });
+  },
+  components: {
+    "image-item": ImageItem
   }
 };
 </script>
