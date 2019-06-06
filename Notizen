@@ -3,7 +3,9 @@
 https://laracasts.com/series/learn-vue-2-step-by-step/episodes/9
 
 - Frontend: Funktionalität
-  - Komponenten verwenden
+  + Komponenten verwenden
+    https://vuejsdevelopers.com/2017/03/24/vue-js-component-templates/
+    https://dev-notes.eu/2018/05/passing-data-between-vue-components/
   - Textdateien aus JSON dynamisch lesen
     https://stackoverflow.com/questions/34944099/how-to-import-a-json-file-in-ecmascript-6
     https://github.com/webpack-contrib/raw-loader

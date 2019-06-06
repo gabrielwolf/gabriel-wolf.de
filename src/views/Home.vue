@@ -4,7 +4,7 @@
       <v-flex>
         <v-flex xs12 mt-2>
           <v-avatar size="200px">
-            <img src="/portrait.png" alt="Portrait Gabriel Wolf" />
+            <img src="/portrait.jpg" alt="Portrait Gabriel Wolf" />
           </v-avatar>
           <h1 class="ma-3">
             Ein Mensch.<br />

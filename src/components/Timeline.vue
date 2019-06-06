@@ -11,26 +11,28 @@
           <div class="date">{{ event.datetime }} Uhr</div>
           <image-item
             v-if="event.extension === 'jpg'"
-            :src="`media/${event.url}`"
+            :width="400"
+            :height="600"
+            :src="`https://gabriel-wolf.test/${event.url}`"
             :title="event.title"
             class="timeline-image"
           />
-          <audio
-            v-if="event.extension === 'wav'"
-            controls
-            preload="metadata"
-            :title="event.title"
-            class="timeline-audio"
-          >
-            <source :src="`media/${event.url}`" stype="audio/wav" />
-          </audio>
-          <video
-            v-if="event.extension === 'mp4'"
-            controls
-            class="timeline-video"
-          >
-            <source :src="`media/${event.url}`" type="video/mp4" />
-          </video>
+          <!--          <audio-->
+          <!--            v-if="event.extension === 'wav'"-->
+          <!--            controls-->
+          <!--            preload="metadata"-->
+          <!--            :title="event.title"-->
+          <!--            class="timeline-audio"-->
+          <!--          >-->
+          <!--            <source :src="`media/${event.url}`" stype="audio/wav" />-->
+          <!--          </audio>-->
+          <!--          <video-->
+          <!--            v-if="event.extension === 'mp4'"-->
+          <!--            controls-->
+          <!--            class="timeline-video"-->
+          <!--          >-->
+          <!--            <source :src="`media/${event.url}`" type="video/mp4" />-->
+          <!--          </video>-->
           <figcaption>{{ event.title }}</figcaption>
         </figure>
       </div>

@@ -1,0 +1,28 @@
+{
+    "events":[
+        {
+            "datetime":"2019-05-24 13:21:23",
+            "extension":"mp4",
+            "title":"Spendenaufruf",
+            "url":"2019-05-24_13-21-23_Spendenaufruf.mp4"
+        },
+        {
+            "datetime":"2019-01-27 00:27:04",
+            "extension":"txt",
+            "title":"Hirnwichsen",
+            "url":"2019-01-27_00-27-04_Hirnwichsen.txt"
+        },
+        {
+            "datetime":"2018-12-24 17:03:00",
+            "extension":"wav",
+            "title":"Wenn Sterne blu\u0308hen",
+            "url":"2018-12-24_17-03-00_Wenn Sterne blu\u0308hen.wav"
+        },
+        {
+            "datetime":"2018-06-26 06:30:14",
+            "extension":"jpg",
+            "title":"Portrait Benediktbeuern",
+            "url":"2018-06-26_06-30-14_Portrait Benediktbeuern.jpg"
+        }
+    ]
+}
