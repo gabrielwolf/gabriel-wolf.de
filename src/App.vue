@@ -1,7 +1,23 @@
 <template>
   <v-app>
-    <v-system-bar app color="primary" class="switch-bar"
-      ><v-switch light></v-switch>
+    <v-system-bar
+      app
+      align-center
+      justify-center
+      row
+      fill-height
+      color="primary"
+      class="switch-bar"
+      ><v-switch light style="flex: inherit; margin-top: 0.45rem"></v-switch>
+      <div style="padding-bottom: 1.5rem">
+        <v-icon
+          medium
+          color="white"
+          class="download-icon"
+          style="display: inline-block; margin: auto"
+          >mdi-download-network</v-icon
+        >
+      </div>
     </v-system-bar>
     <v-content>
       <v-container>
@@ -75,8 +91,9 @@ h3
     margin auto
 
   .switch-bar
-    padding 1.5rem 1.5rem 1.35rem 1.5rem
-
-  .v-input__control
-    margin auto
+    padding 0
+    height 45px !important
+    > *
+      vertical-align middle
+      margin auto
 </style>
