@@ -56,7 +56,9 @@
               <a :href="videoSrc(event.url, 'ogg')">ogg</a>
             </div>
           </div>
-          <div></div>
+          <div v-if="event.extension === 'txt'" :id="i" class="timeline-text">
+            {{ getTextContent(event.url, i) }}
+          </div>
           <figcaption>{{ event.title }}</figcaption>
         </figure>
       </div>
@@ -67,7 +69,8 @@
 <script>
 import ImageItem from "@/components/ImageItem.vue";
 
-let baseUrl = "https://gabriel-wolf.test/";
+// let baseUrl = "https://gabriel-wolf.test/";
+let baseUrl = "https://gabriel-wolf.de/media/";
 
 export default {
   methods: {
@@ -102,6 +105,15 @@ export default {
     videoPosterSrc: function(url) {
       let clean_url = url.replace(" ", "%20");
       return baseUrl + clean_url.replace(".mp4", "-preload.jpg");
+    },
+    getTextContent: function(url, id) {
+      url = url.replace(" ", "%20");
+      url = baseUrl + url.replace(".txt", ".json");
+      fetch(url)
+        .then(r => r.json())
+        .then(json => {
+          document.getElementById(id).innerHTML = json.text;
+        });
     }
   },
   data: () => ({
@@ -137,4 +149,7 @@ export default {
 
 .date, figcaption
   color #777
+
+.timeline-text
+  text-align left
 </style>
