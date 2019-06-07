@@ -1,5 +1,5 @@
 <template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
-  <v-timeline dense>
+  <v-timeline>
     <v-timeline-item
       v-for="(event, i) in json.events"
       :key="i"
@@ -12,27 +12,33 @@
           <image-item
             v-if="event.extension === 'jpg'"
             :width="400"
-            :height="600"
-            :src="`https://gabriel-wolf.test/${event.url}`"
+            :height="400"
+            :src="preloadSrc(event.url)"
             :title="event.title"
             class="timeline-image"
           />
-          <!--          <audio-->
-          <!--            v-if="event.extension === 'wav'"-->
-          <!--            controls-->
-          <!--            preload="metadata"-->
-          <!--            :title="event.title"-->
-          <!--            class="timeline-audio"-->
-          <!--          >-->
-          <!--            <source :src="`media/${event.url}`" stype="audio/wav" />-->
-          <!--          </audio>-->
-          <!--          <video-->
-          <!--            v-if="event.extension === 'mp4'"-->
-          <!--            controls-->
-          <!--            class="timeline-video"-->
-          <!--          >-->
-          <!--            <source :src="`media/${event.url}`" type="video/mp4" />-->
-          <!--          </video>-->
+          <audio
+            v-if="event.extension === 'wav'"
+            controls
+            preload="metadata"
+            :title="event.title"
+            class="timeline-audio"
+          >
+            <source
+              :src="`https://gabriel-wolf.test/${event.url}`"
+              stype="audio/wav"
+            />
+          </audio>
+          <video
+            v-if="event.extension === 'mp4'"
+            controls
+            class="timeline-video"
+          >
+            <source
+              :src="`https://gabriel-wolf.test/${event.url}`"
+              type="video/mp4"
+            />
+          </video>
           <figcaption>{{ event.title }}</figcaption>
         </figure>
       </div>
@@ -43,7 +49,14 @@
 <script>
 import ImageItem from "@/components/ImageItem.vue";
 
+let env = "https://gabriel-wolf.test/";
+
 export default {
+  methods: {
+    preloadSrc: function(url) {
+      return env + url.replace(".jpg", "-preload.jpg");
+    }
+  },
   data: () => ({
     json: []
   }),
