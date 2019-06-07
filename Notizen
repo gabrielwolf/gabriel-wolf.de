@@ -3,15 +3,19 @@
 https://laracasts.com/series/learn-vue-2-step-by-step/episodes/9
 
 - Frontend: Funktionalität
-  + Komponenten verwenden
-    https://vuejsdevelopers.com/2017/03/24/vue-js-component-templates/
-    https://dev-notes.eu/2018/05/passing-data-between-vue-components/
   - Textdateien aus JSON dynamisch lesen
     https://stackoverflow.com/questions/34944099/how-to-import-a-json-file-in-ecmascript-6
     https://github.com/webpack-contrib/raw-loader
+  + Komponenten verwenden
+    https://vuejsdevelopers.com/2017/03/24/vue-js-component-templates/
+    https://dev-notes.eu/2018/05/passing-data-between-vue-components/
 
 + LazyLoad
   Yeah! https://markus.oberlehner.net/blog/lazy-loading-responsive-images-with-vue/
+
+- Mediendateien
+  - Makefile
+  - Schema um Klassen category und shadow erweitern
 
 - Frontend: UI
   - Klasse dense für Viewportbreiten unter 400px zuweisen
@@ -19,10 +23,6 @@ https://laracasts.com/series/learn-vue-2-step-by-step/episodes/9
     https://stackoverflow.com/questions/1248081/get-the-browser-viewport-dimensions-with-javascript#8876069
   - Icons (Bild, Klavier, Text, Video) mit Klasse category verbandeln
   - Darkmode
-
-- Mediendateien
-  - Makefile
-  - Schema um Klassen category und shadow erweitern
 
 - SEO
   https://medium.com/@gajus/react-application-seen-as-a-blank-page-via-fetch-as-google-afb11dff8562

@@ -31,7 +31,6 @@
               Dein Browser unterstützt leider kein natives Streaming. Versuche
               einen Downloadlink.
             </audio>
-
             <div>
               Download:
               <a :href="audioSrc(event.url, 'flac')" download>flac</a> |
@@ -39,16 +38,25 @@
               <a :href="audioSrc(event.url, 'ogg')">ogg</a>
             </div>
           </div>
-          <video
-            v-if="event.extension === 'mp4'"
-            controls
-            class="timeline-video"
-          >
-            <source
-              :src="`https://gabriel-wolf.test/${event.url}`"
-              type="video/mp4"
-            />
-          </video>
+          <div v-if="event.extension === 'mp4'">
+            <video
+              controls
+              class="timeline-video"
+              preload="metadata"
+              :poster="videoPosterSrc(event.url)"
+            >
+              <source :src="videoSrc(event.url, 'webm')" type="video/webm" />
+              <source :src="videoSrc(event.url, 'mp4')" type="video/mp4" />
+              <source :src="videoSrc(event.url, 'ogg')" type="video/ogg" />
+            </video>
+            <div>
+              Download:
+              <a :href="videoSrc(event.url, 'webm')">webm</a> |
+              <a :href="videoSrc(event.url, 'mp4')">mp4</a> |
+              <a :href="videoSrc(event.url, 'ogg')">ogg</a>
+            </div>
+          </div>
+          <div></div>
           <figcaption>{{ event.title }}</figcaption>
         </figure>
       </div>
@@ -86,6 +94,14 @@ export default {
     audioSrc: function(url, extension) {
       let clean_url = url.replace(" ", "%20");
       return baseUrl + clean_url.replace(".wav", "." + extension);
+    },
+    videoSrc: function(url, extension) {
+      let clean_url = url.replace(" ", "%20");
+      return baseUrl + clean_url.replace(".mp4", "." + extension);
+    },
+    videoPosterSrc: function(url) {
+      let clean_url = url.replace(" ", "%20");
+      return baseUrl + clean_url.replace(".mp4", "-preload.jpg");
     }
   },
   data: () => ({
@@ -105,7 +121,7 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.v-timeline-item__body > *
+.v-timeline-item__body > div
   display block
 
 .timeline-image, .timeline-video, .timeline-audio
