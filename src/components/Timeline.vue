@@ -11,11 +11,11 @@
           <div class="date">{{ event.datetime }} Uhr</div>
           <image-item
             v-if="event.extension === 'jpg'"
-            :width="400"
-            :height="400"
-            :src="preloadSrc(event.url)"
-            :lazy-src="lazySrc(event.url)"
-            :lazy-srcset="lazySrcSet(event.url)"
+            :width="event.width"
+            :height="event.height"
+            :src="imagePreloadSrc(event.url)"
+            :lazy-src="imageLazySrc(event.url)"
+            :lazy-srcset="imageLazySrcSet(event.url)"
             :title="event.title"
             class="timeline-image"
           />
@@ -55,13 +55,15 @@ let baseUrl = "https://gabriel-wolf.test/";
 
 export default {
   methods: {
-    preloadSrc: function(url) {
-      return baseUrl + url.replace(".jpg", "-preload.jpg");
+    imagePreloadSrc: function(url) {
+      let clean_url = url.replace(" ", "%20");
+      return baseUrl + clean_url.replace(".jpg", "-preload.jpg");
     },
-    lazySrc: function(url) {
-      return baseUrl + url.replace(".jpg", "-400x.jpg");
+    imageLazySrc: function(url) {
+      let clean_url = url.replace(" ", "%20");
+      return baseUrl + clean_url.replace(".jpg", "-400x.jpg");
     },
-    lazySrcSet: function(url) {
+    imageLazySrcSet: function(url) {
       let clean_url = url.replace(" ", "%20");
       let output = "";
       output += baseUrl + clean_url.replace(".jpg", "-400w.jpg") + " 400w,";
@@ -72,6 +74,9 @@ export default {
       output += baseUrl + clean_url.replace(".jpg", "-2000w.jpg") + " 2000w,";
       output += baseUrl + clean_url.replace(".jpg", "-2500w.jpg") + " 2500w";
       return output;
+    },
+    audioSrc: function() {
+      return true;
     }
   },
   data: () => ({
