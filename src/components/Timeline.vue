@@ -14,6 +14,8 @@
             :width="400"
             :height="400"
             :src="preloadSrc(event.url)"
+            :lazy-src="lazySrc(event.url)"
+            :lazy-srcset="lazySrcSet(event.url)"
             :title="event.title"
             class="timeline-image"
           />
@@ -49,12 +51,27 @@
 <script>
 import ImageItem from "@/components/ImageItem.vue";
 
-let env = "https://gabriel-wolf.test/";
+let baseUrl = "https://gabriel-wolf.test/";
 
 export default {
   methods: {
     preloadSrc: function(url) {
-      return env + url.replace(".jpg", "-preload.jpg");
+      return baseUrl + url.replace(".jpg", "-preload.jpg");
+    },
+    lazySrc: function(url) {
+      return baseUrl + url.replace(".jpg", "-400x.jpg");
+    },
+    lazySrcSet: function(url) {
+      let clean_url = url.replace(" ", "%20");
+      let output = "";
+      output += baseUrl + clean_url.replace(".jpg", "-400w.jpg") + " 400w,";
+      output += baseUrl + clean_url.replace(".jpg", "-600w.jpg") + " 600w,";
+      output += baseUrl + clean_url.replace(".jpg", "-800w.jpg") + " 800w,";
+      output += baseUrl + clean_url.replace(".jpg", "-1000w.jpg") + " 1000w,";
+      output += baseUrl + clean_url.replace(".jpg", "-1500w.jpg") + " 1500w,";
+      output += baseUrl + clean_url.replace(".jpg", "-2000w.jpg") + " 2000w,";
+      output += baseUrl + clean_url.replace(".jpg", "-2500w.jpg") + " 2500w";
+      return output;
     }
   },
   data: () => ({
