@@ -10,7 +10,7 @@ https://laracasts.com/series/learn-vue-2-step-by-step/episodes/9
     https://stackoverflow.com/questions/34944099/how-to-import-a-json-file-in-ecmascript-6
     https://github.com/webpack-contrib/raw-loader
 
-- LazyLoad
++ LazyLoad
   Yeah! https://markus.oberlehner.net/blog/lazy-loading-responsive-images-with-vue/
 
 - Frontend: UI
@@ -23,7 +23,6 @@ https://laracasts.com/series/learn-vue-2-step-by-step/episodes/9
 - Mediendateien
   - Makefile
   - Schema um Klassen category und shadow erweitern
-    - Tests aktualisieren
 
 - SEO
   https://medium.com/@gajus/react-application-seen-as-a-blank-page-via-fetch-as-google-afb11dff8562

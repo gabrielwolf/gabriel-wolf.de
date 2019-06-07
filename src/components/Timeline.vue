@@ -19,18 +19,26 @@
             :title="event.title"
             class="timeline-image"
           />
-          <audio
-            v-if="event.extension === 'wav'"
-            controls
-            preload="metadata"
-            :title="event.title"
-            class="timeline-audio"
-          >
-            <source
-              :src="`https://gabriel-wolf.test/${event.url}`"
-              stype="audio/wav"
-            />
-          </audio>
+          <div v-if="event.extension === 'wav'">
+            <audio
+              controls
+              preload="metadata"
+              :title="event.title"
+              class="timeline-audio"
+            >
+              <source :src="audioSrc(event.url, 'mp3')" type="audio/mpeg" />
+              <source :src="audioSrc(event.url, 'ogg')" type="audio/ogg" />
+              Dein Browser unterstützt leider kein natives Streaming. Versuche
+              einen Downloadlink.
+            </audio>
+
+            <div>
+              Download:
+              <a :href="audioSrc(event.url, 'flac')" download>flac</a> |
+              <a :href="audioSrc(event.url, 'mp3')">mp3</a> |
+              <a :href="audioSrc(event.url, 'ogg')">ogg</a>
+            </div>
+          </div>
           <video
             v-if="event.extension === 'mp4'"
             controls
@@ -75,8 +83,9 @@ export default {
       output += baseUrl + clean_url.replace(".jpg", "-2500w.jpg") + " 2500w";
       return output;
     },
-    audioSrc: function() {
-      return true;
+    audioSrc: function(url, extension) {
+      let clean_url = url.replace(" ", "%20");
+      return baseUrl + clean_url.replace(".wav", "." + extension);
     }
   },
   data: () => ({
@@ -96,7 +105,7 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.v-timeline-item__body *
+.v-timeline-item__body > *
   display block
 
 .timeline-image, .timeline-video, .timeline-audio
