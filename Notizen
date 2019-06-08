@@ -23,7 +23,7 @@ https://laracasts.com/series/learn-vue-2-step-by-step/episodes/9
     https://www.sitepoint.com/conditionally-applying-css-class-vue-js/
     https://stackoverflow.com/questions/1248081/get-the-browser-viewport-dimensions-with-javascript#8876069
   - Icons (Bild, Klavier, Text, Video) mit Klasse category verbandeln
-  - Darkmode Simple (Nur Farbe ändern)
+  + Darkmode Simple (Nur Farbe ändern)
 
 - SEO
   https://medium.com/@gajus/react-application-seen-as-a-blank-page-via-fetch-as-google-afb11dff8562

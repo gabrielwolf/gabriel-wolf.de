@@ -1,7 +1,7 @@
 <template>
   <v-app :dark="darkMode">
     <v-system-bar app color="primary" class="switch-bar"
-      ><v-switch v-model="switchme" label="Kontrast"></v-switch>
+      ><v-switch v-model="switchme"></v-switch>
     </v-system-bar>
     <v-content>
       <v-container>
