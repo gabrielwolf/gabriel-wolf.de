@@ -17,7 +17,9 @@
             Manches zufällig.<br />
             Nichts umsonst.
           </p>
-          <h2 class="mb-3 text-xs-center">Ein Zeitstrahl.</h2>
+          <h2 class="mb-3 text-xs-center">
+            Ein Zeitstrahl.
+          </h2>
         </v-flex>
         <Timeline />
       </v-flex>
