@@ -8,7 +8,7 @@
     >
       <div>
         <figure>
-          <div class="date">{{ event.datetime }} Uhr</div>
+          <div class="date mb-2">{{ event.datetime }} Uhr</div>
           <image-item
             v-if="event.extension === 'jpg'"
             :width="event.width"
@@ -17,21 +17,21 @@
             :lazy-src="imageLazySrc(event.url)"
             :lazy-srcset="imageLazySrcSet(event.url)"
             :alt="event.title"
-            class="timeline-image"
+            class="timeline-image mb-2"
           />
           <div v-if="event.extension === 'wav'">
             <audio
               controls
               preload="metadata"
               :title="event.title"
-              class="timeline-audio"
+              class="timeline-audio mb-2"
             >
               <source :src="audioSrc(event.url, 'mp3')" type="audio/mpeg" />
               <source :src="audioSrc(event.url, 'ogg')" type="audio/ogg" />
               Dein Browser unterstützt leider kein natives Streaming. Versuche
               einen Downloadlink.
             </audio>
-            <div>
+            <div class="download">
               Download:
               <a :href="audioSrc(event.url, 'flac')" download>flac</a> |
               <a :href="audioSrc(event.url, 'mp3')">mp3</a> |
@@ -41,7 +41,7 @@
           <div v-if="event.extension === 'mp4'">
             <video
               controls
-              class="timeline-video"
+              class="timeline-video mb-2"
               preload="metadata"
               :poster="videoPosterSrc(event.url)"
             >
@@ -49,14 +49,14 @@
               <source :src="videoSrc(event.url, 'mp4')" type="video/mp4" />
               <source :src="videoSrc(event.url, 'ogg')" type="video/ogg" />
             </video>
-            <div>
+            <div class="download">
               Download:
               <a :href="videoSrc(event.url, 'webm')">webm</a> |
               <a :href="videoSrc(event.url, 'mp4')">mp4</a> |
               <a :href="videoSrc(event.url, 'ogg')">ogg</a>
             </div>
           </div>
-          <div v-if="event.extension === 'txt'" class="timeline-text">
+          <div v-if="event.extension === 'txt'" class="timeline-text mb-2">
             <div class="timeline-text-container">
               <input id="ch" type="checkbox" />
               <label for="ch"></label>

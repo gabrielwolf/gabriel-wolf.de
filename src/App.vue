@@ -84,4 +84,16 @@ h3
 
   .v-input__control
     margin auto
+
+/* Dark mode */
+
+.theme--dark.application
+  background #111
+  color #ddf !important
+
+  .v-system-bar
+    background #222 !important
+
+  .download
+    color #777
 </style>
