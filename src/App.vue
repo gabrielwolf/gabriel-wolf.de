@@ -1,7 +1,7 @@
 <template>
-  <v-app>
+  <v-app :dark="darkMode">
     <v-system-bar app color="primary" class="switch-bar"
-      ><v-switch light></v-switch>
+      ><v-switch v-model="switchme" label="Kontrast"></v-switch>
     </v-system-bar>
     <v-content>
       <v-container>
@@ -29,7 +29,12 @@
 export default {
   name: "App",
   data() {
-    return {};
+    return { switchme: false };
+  },
+  computed: {
+    darkMode() {
+      return !!this.switchme;
+    }
   }
 };
 </script>
