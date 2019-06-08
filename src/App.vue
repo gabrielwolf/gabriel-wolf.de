@@ -85,15 +85,18 @@ h3
   .v-input__control
     margin auto
 
+  .download
+    color #777
+
+.theme--light.application
+   background: linear-gradient(to bottom, #ddd 0%, #fff 100%);
+
 /* Dark mode */
 
 .theme--dark.application
-  background #111
+  background: linear-gradient(to bottom, #111 0%, #000 100%);
   color #ddf !important
 
   .v-system-bar
     background #222 !important
-
-  .download
-    color #777
 </style>

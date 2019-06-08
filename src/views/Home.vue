@@ -11,7 +11,7 @@
             Ein Archiv.<br />
             Ein Versuch.
           </h1>
-          <p class="subheading font-weight-regular">
+          <p class="subheading font-weight-regular teaser-text">
             Warum? Vieles aus gutem Grund.<br />
             Einiges ohne Absicht.<br />
             Manches zufällig.<br />
@@ -38,3 +38,8 @@ export default {
   }
 };
 </script>
+
+<style lang="stylus" scoped>
+.teaser-text
+  color #1976d2
+</style>

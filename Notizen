@@ -17,7 +17,7 @@ https://laracasts.com/series/learn-vue-2-step-by-step/episodes/9
 
 - Frontend: UI
   - ToDo bei orientation mobil neu berechnen
-  - Farben darktheme
+  + Farben darktheme
   + Klasse dense für Viewportbreiten unter 400px zuweisen
     https://www.sitepoint.com/conditionally-applying-css-class-vue-js/
     https://stackoverflow.com/questions/1248081/get-the-browser-viewport-dimensions-with-javascript#8876069

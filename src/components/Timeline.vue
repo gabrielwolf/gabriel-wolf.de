@@ -56,7 +56,7 @@
               <a :href="videoSrc(event.url, 'ogg')">ogg</a>
             </div>
           </div>
-          <div v-if="event.extension === 'txt'" class="timeline-text mb-2">
+          <div v-if="event.extension === 'txt'" class="timeline-text mb-3">
             <div class="timeline-text-container">
               <input id="ch" type="checkbox" />
               <label for="ch"></label>
