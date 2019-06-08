@@ -56,8 +56,34 @@
               <a :href="videoSrc(event.url, 'ogg')">ogg</a>
             </div>
           </div>
-          <div v-if="event.extension === 'txt'" :id="i" class="timeline-text">
-            {{ getTextContent(event.url, i) }}
+          <div v-if="event.extension === 'txt'" class="timeline-text">
+            <div class="timeline-text-container">
+              <input id="ch" type="checkbox" />
+              <label for="ch"></label>
+              <div class="timeline-text-content" :id="i">
+                {{
+                  getTextContent(event.url, i)
+                }}Er<br />&nbsp;&nbsp;&nbsp;&nbsp;An wen richte ich meine
+                Gedanken?<br />&nbsp;&nbsp;&nbsp;&nbsp;Bist Du es ...?<br />&nbsp;&nbsp;&nbsp;&nbsp;Weil
+                ich Dich als erste im Sinn hatte?<br />&nbsp;&nbsp;&nbsp;&nbsp;Was,
+                wenn ich die Nachricht verfasst hätte,<br />&nbsp;&nbsp;&nbsp;&nbsp;und
+                am Ende die Adresse austauschte?<br />&nbsp;&nbsp;&nbsp;&nbsp;Hätte
+                ich Dich damit betrogen?<br /><br />Sie<br />&nbsp;&nbsp;&nbsp;&nbsp;Fuck
+                klingt das nach Bergpredigt.<br /><br />Er<br />&nbsp;&nbsp;&nbsp;&nbsp;Manches
+                mal nehme ich den Hörer, wähle,<br />&nbsp;&nbsp;&nbsp;&nbsp;es
+                leutet hin, und - keiner geht ran.<br />&nbsp;&nbsp;&nbsp;&nbsp;Dann
+                kommt die nächste Person ...<br />&nbsp;&nbsp;&nbsp;&nbsp;...
+                und wird mit meinen Gedanken befeuert.<br /><br />Sie<br />&nbsp;&nbsp;&nbsp;&nbsp;Für
+                Dich wohl kaum, aber für mich stellt sich die Frage:<br />&nbsp;&nbsp;&nbsp;&nbsp;Hat
+                es diese Person besser oder schlechter als Du?<br /><br />Er<br />&nbsp;&nbsp;&nbsp;&nbsp;Ach
+                geh hol dir einen runter!<br /><br />Sie<br />&nbsp;&nbsp;&nbsp;&nbsp;Geduld
+                mein Guter. Dir wird bei Zeiten das Lachen schon vergehen.<br /><br />Er<br />&nbsp;&nbsp;&nbsp;&nbsp;Oh,
+                /das/ wäre spannend.<br /><br />Sie (leise)<br />&nbsp;&nbsp;&nbsp;&nbsp;Wo
+                hab ich dich verloren? (Pause)<br /><br />Er (leise)<br />&nbsp;&nbsp;&nbsp;&nbsp;Gerade
+                eben, unten an der Treppe.<br /><br />Sie (küsst ihn)<br />&nbsp;&nbsp;&nbsp;&nbsp;Du
+                Schmerzkeks.
+              </div>
+            </div>
           </div>
           <figcaption>{{ event.title }}</figcaption>
         </figure>
@@ -133,8 +159,20 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+/* General */
+
+.not-visible
+  visibility hidden
+
+/* Timeline */
+
+.date, figcaption
+  color #777
+
 .v-timeline-item__body > div
   display block
+
+/* Audio and Video */
 
 .timeline-image, .timeline-video, .timeline-audio
   max-width 100%
@@ -144,12 +182,37 @@ export default {
 .timeline-audio
   display inline-block !important
 
-.not-visible
-  visibility hidden
-
-.date, figcaption
-  color #777
+/* Text */
 
 .timeline-text
   text-align left
+
+.timeline-text-container
+  position relative
+  margin-bottom 2.5rem
+
+.timeline-text-content
+  height 100px
+  overflow hidden
+
+label
+  position absolute
+  top 100%
+  width 100%
+  padding-top 0.5rem
+  cursor pointer
+  color #42b983
+  text-align left
+
+input
+  display none
+
+label:after
+  content "mehr lesen"
+
+input:checked+label:after
+  content "weniger lesen"
+
+input:checked~div
+  height 100%
 </style>

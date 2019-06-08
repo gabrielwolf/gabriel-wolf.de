@@ -3,7 +3,8 @@
 https://laracasts.com/series/learn-vue-2-step-by-step/episodes/9
 
 - Frontend: Funktionalität
-  - Textdateien aus JSON dynamisch lesen
+  + Texte automatisch einklappen CSS http://jsfiddle.net/ExplosionPIlls/6sj4e/
+  + Textdateien aus JSON dynamisch lesen
     https://stackoverflow.com/questions/34944099/how-to-import-a-json-file-in-ecmascript-6
     https://github.com/webpack-contrib/raw-loader
   + Komponenten verwenden
