@@ -16,7 +16,7 @@
             :src="imagePreloadSrc(event.url)"
             :lazy-src="imageLazySrc(event.url)"
             :lazy-srcset="imageLazySrcSet(event.url)"
-            :title="event.title"
+            :alt="event.title"
             class="timeline-image"
           />
           <div v-if="event.extension === 'wav'">
