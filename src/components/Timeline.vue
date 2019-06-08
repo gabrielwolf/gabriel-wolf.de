@@ -1,5 +1,5 @@
 <template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
-  <v-timeline>
+  <v-timeline :dense="denseMode">
     <v-timeline-item
       v-for="(event, i) in json.events"
       :key="i"
@@ -143,7 +143,8 @@ export default {
     }
   },
   data: () => ({
-    json: []
+    json: [],
+    dense: true
   }),
   created: function() {
     fetch("/media/media.json")
@@ -154,6 +155,19 @@ export default {
   },
   components: {
     "image-item": ImageItem
+  },
+  computed: {
+    denseMode() {
+      let w = Math.max(
+        document.documentElement.clientWidth,
+        window.innerWidth || 0
+      );
+      if (w < 560) {
+        return true;
+      } else {
+        return false;
+      }
+    }
   }
 };
 </script>
