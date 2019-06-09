@@ -186,6 +186,10 @@ export default {
 .v-timeline-item__body > div
   display block
 
+.v-timeline-item
+  margin-bottom 8rem
+
+
 /* Audio and Video */
 
 .timeline-image, .timeline-video, .timeline-audio
