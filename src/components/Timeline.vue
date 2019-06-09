@@ -8,6 +8,10 @@
     >
       <div>
         <figure>
+          <div
+            v-if="event.extension === 'wav' || event.extension === 'mp4'"
+            class="pt-4"
+          ></div>
           <div class="date mb-2">{{ event.datetime }} Uhr</div>
           <image-item
             v-if="event.extension === 'jpg'"
@@ -219,7 +223,7 @@ label
   width 100%
   padding-top 0.5rem
   cursor pointer
-  color #42b983
+  color #1976d2
   text-align left
 
 input

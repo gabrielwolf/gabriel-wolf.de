@@ -62,7 +62,7 @@ h3
 
   a
     font-weight bold
-    color #42b983
+    color #1976d2
     text-decoration none
 
   .v-system-bar
