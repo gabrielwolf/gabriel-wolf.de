@@ -4,7 +4,16 @@
       <v-flex>
         <v-flex xs12 mt-2>
           <v-avatar size="200px">
-            <img src="/portrait.jpg" alt="Portrait Gabriel Wolf" />
+            <img
+              src="/portrait.jpg"
+              alt="Portrait Gabriel Wolf"
+              class="portrait-light"
+            />
+            <img
+              src="/portrait-dark.jpg"
+              alt="Portrait Gabriel Wolf"
+              class="portrait-dark"
+            />
           </v-avatar>
           <h1 class="ma-3">
             Ein Mensch.<br />
@@ -40,6 +49,12 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.theme--light .portrait-light
+  display none
+
+.theme--dark .portrait-dark
+  display none
+
 .teaser-text
   color #1976d2
 </style>
