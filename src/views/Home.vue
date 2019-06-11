@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid home pt-0>
+  <v-container fluid home pa-0>
     <v-layout>
       <v-flex>
         <v-flex xs12 mt-2>
