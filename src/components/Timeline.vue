@@ -65,27 +65,7 @@
               <input id="ch" type="checkbox" />
               <label for="ch"></label>
               <div class="timeline-text-content" :id="i">
-                {{
-                  getTextContent(event.url, i)
-                }}Er<br />&nbsp;&nbsp;&nbsp;&nbsp;An wen richte ich meine
-                Gedanken?<br />&nbsp;&nbsp;&nbsp;&nbsp;Bist Du es ...?<br />&nbsp;&nbsp;&nbsp;&nbsp;Weil
-                ich Dich als erste im Sinn hatte?<br />&nbsp;&nbsp;&nbsp;&nbsp;Was,
-                wenn ich die Nachricht verfasst hätte,<br />&nbsp;&nbsp;&nbsp;&nbsp;und
-                am Ende die Adresse austauschte?<br />&nbsp;&nbsp;&nbsp;&nbsp;Hätte
-                ich Dich damit betrogen?<br /><br />Sie<br />&nbsp;&nbsp;&nbsp;&nbsp;Fuck
-                klingt das nach Bergpredigt.<br /><br />Er<br />&nbsp;&nbsp;&nbsp;&nbsp;Manches
-                mal nehme ich den Hörer, wähle,<br />&nbsp;&nbsp;&nbsp;&nbsp;es
-                leutet hin, und - keiner geht ran.<br />&nbsp;&nbsp;&nbsp;&nbsp;Dann
-                kommt die nächste Person ...<br />&nbsp;&nbsp;&nbsp;&nbsp;...
-                und wird mit meinen Gedanken befeuert.<br /><br />Sie<br />&nbsp;&nbsp;&nbsp;&nbsp;Für
-                Dich wohl kaum, aber für mich stellt sich die Frage:<br />&nbsp;&nbsp;&nbsp;&nbsp;Hat
-                es diese Person besser oder schlechter als Du?<br /><br />Er<br />&nbsp;&nbsp;&nbsp;&nbsp;Ach
-                geh hol dir einen runter!<br /><br />Sie<br />&nbsp;&nbsp;&nbsp;&nbsp;Geduld
-                mein Guter. Dir wird bei Zeiten das Lachen schon vergehen.<br /><br />Er<br />&nbsp;&nbsp;&nbsp;&nbsp;Oh,
-                /das/ wäre spannend.<br /><br />Sie (leise)<br />&nbsp;&nbsp;&nbsp;&nbsp;Wo
-                hab ich dich verloren? (Pause)<br /><br />Er (leise)<br />&nbsp;&nbsp;&nbsp;&nbsp;Gerade
-                eben, unten an der Treppe.<br /><br />Sie (küsst ihn)<br />&nbsp;&nbsp;&nbsp;&nbsp;Du
-                Schmerzkeks.
+                {{ getTextContent(event.url, i) }}
               </div>
             </div>
           </div>
@@ -105,36 +85,30 @@ let baseUrl = "https://gabriel-wolf.de/media/";
 export default {
   methods: {
     imagePreloadSrc: function(url) {
-      let clean_url = url.replace(" ", "%20");
-      return baseUrl + clean_url.replace(".jpg", "-preload.jpg");
+      return encodeURI(baseUrl + url).replace(".jpg", "-preload.jpg");
     },
     imageLazySrc: function(url) {
-      let clean_url = url.replace(" ", "%20");
-      return baseUrl + clean_url.replace(".jpg", "-400x.jpg");
+      return encodeURI(baseUrl + url).replace(".jpg", "-400x.jpg");
     },
     imageLazySrcSet: function(url) {
-      let clean_url = url.replace(" ", "%20");
       let output = "";
-      output += baseUrl + clean_url.replace(".jpg", "-400w.jpg") + " 400w,";
-      output += baseUrl + clean_url.replace(".jpg", "-600w.jpg") + " 600w,";
-      output += baseUrl + clean_url.replace(".jpg", "-800w.jpg") + " 800w,";
-      output += baseUrl + clean_url.replace(".jpg", "-1000w.jpg") + " 1000w,";
-      output += baseUrl + clean_url.replace(".jpg", "-1500w.jpg") + " 1500w,";
-      output += baseUrl + clean_url.replace(".jpg", "-2000w.jpg") + " 2000w,";
-      output += baseUrl + clean_url.replace(".jpg", "-2500w.jpg") + " 2500w";
+      output += encodeURI(baseUrl + url).replace(".jpg", "-400w.jpg 400w,");
+      output += encodeURI(baseUrl + url).replace(".jpg", "-600w.jpg 600w,");
+      output += encodeURI(baseUrl + url).replace(".jpg", "-800w.jpg 800w,");
+      output += encodeURI(baseUrl + url).replace(".jpg", "-1000w.jpg 1000w,");
+      output += encodeURI(baseUrl + url).replace(".jpg", "-1500w.jpg 1500w,");
+      output += encodeURI(baseUrl + url).replace(".jpg", "-2000w.jpg 2000w,");
+      output += encodeURI(baseUrl + url).replace(".jpg", "-2500w.jpg 2500w");
       return output;
     },
     audioSrc: function(url, extension) {
-      let clean_url = url.replace(" ", "%20");
-      return baseUrl + clean_url.replace(".wav", "." + extension);
+      return encodeURI(baseUrl + url).replace(".wav", "." + extension);
     },
     videoSrc: function(url, extension) {
-      let clean_url = url.replace(" ", "%20");
-      return baseUrl + clean_url.replace(".mp4", "." + extension);
+      return encodeURI(baseUrl + url).replace(".mp4", "." + extension);
     },
     videoPosterSrc: function(url) {
-      let clean_url = url.replace(" ", "%20");
-      return baseUrl + clean_url.replace(".mp4", "-preload.jpg");
+      return encodeURI(baseUrl + url).replace(".mp4", "-preload.jpg");
     },
     getTextContent: function(url, id) {
       url = url.replace(" ", "%20");

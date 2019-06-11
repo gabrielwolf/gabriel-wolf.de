@@ -15,16 +15,24 @@
         {
             "datetime":"2018-12-24 17:03:00",
             "extension":"wav",
-            "title":"Wenn Sterne blu\u0308hen",
-            "url":"2018-12-24_17-03-00_Wenn Sterne blu\u0308hen.wav"
+            "title":"Wenn Sterne blu\u0308hen - Klavier",
+            "url":"2018-12-24_17-03-00_Wenn Sterne blu\u0308hen - Klavier.wav"
         },
         {
             "datetime":"2018-06-26 06:30:14",
             "extension":"jpg",
             "height":2000,
-            "title":"Portrait Benediktbeuern",
-            "url":"2018-06-26_06-30-14_Portrait Benediktbeuern.jpg",
+            "title":"Portrait Benediktbeuern - Fotograf - Jan Christlieb",
+            "url":"2018-06-26_06-30-14_Portrait Benediktbeuern - Fotograf - Jan Christlieb.jpg",
             "width":2000
+        },
+        {
+            "datetime":"2007-09-21 09:14:31",
+            "extension":"jpg",
+            "height":1880,
+            "title":"Ohne Titel - Fotograf - Alexander Bu\u0308rger",
+            "url":"2007-09-21_09-14-31_Ohne Titel - Fotograf - Alexander Bu\u0308rger.jpg",
+            "width":2816
         }
     ]
 }
