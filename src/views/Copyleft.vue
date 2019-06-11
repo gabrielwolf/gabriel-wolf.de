@@ -12,7 +12,8 @@
             class="mb-3"/></a
         ><br />
         <p text-xs-justify>
-          Alle Werke dieser Seite sind unter einer
+          Alle Werke dieser Website, deren Urheber Gabriel Wolf ist, sind unter
+          einer
           <a
             rel="license"
             href="https://creativecommons.org/licenses/by/4.0/deed.de"
@@ -26,12 +27,8 @@
             'mb-0': $vuetify.breakpoint.mdAndUp
           }"
         >
-          Das heißt, sie dürfen frei verwendet werden, solange der Name des
-          Urhebers mit angegeben wird.
-        </p>
-        <p>
-          Gabriel Wolf: gabriel-wolf.de // der&#8209;herr&#8209;pianist.de //
-          wolfzeit.com
+          Das heißt, sie dürfen frei verwendet werden, solange mein Name mit
+          angegeben wird. Ausnahmen versuche ich zu kennzeichnen.
         </p>
       </v-flex>
     </v-layout>
