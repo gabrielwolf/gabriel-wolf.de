@@ -61,8 +61,8 @@
           </div>
           <div v-if="event.extension === 'txt'" class="timeline-text mb-3">
             <div class="timeline-text-container">
-              <input id="ch" type="checkbox" />
-              <label for="ch"></label>
+              <input :id="'ch' + i" type="checkbox" />
+              <label :for="'ch' + i"></label>
               <div class="timeline-text-content" :id="i">
                 {{ getTextContent(event.url, i) }}
               </div>
@@ -206,28 +206,28 @@ export default {
   position relative
   margin-bottom 2.5rem
 
+  label
+    position absolute
+    top 100%
+    width 100%
+    padding-top 0.5rem
+    cursor pointer
+    color #1976d2
+    text-align left
+
+  input
+    display none
+
+  label:after
+    content "mehr lesen"
+
+  input:checked+label:after
+    content "weniger lesen"
+
+  input:checked~div
+    height 100%
+
 .timeline-text-content
   height 100px
   overflow hidden
-
-label
-  position absolute
-  top 100%
-  width 100%
-  padding-top 0.5rem
-  cursor pointer
-  color #1976d2
-  text-align left
-
-input
-  display none
-
-label:after
-  content "mehr lesen"
-
-input:checked+label:after
-  content "weniger lesen"
-
-input:checked~div
-  height 100%
 </style>
