@@ -20,7 +20,6 @@
             :src="imagePreloadSrc(event.url)"
             :lazy-src="imageLazySrc(event.url)"
             :lazy-srcset="imageLazySrcSet(event.url)"
-            :alt="event.title"
             class="timeline-image mb-2"
           />
           <div v-if="event.extension === 'wav'">
@@ -69,7 +68,18 @@
               </div>
             </div>
           </div>
-          <figcaption>{{ event.title }}</figcaption>
+          <div v-if="event.extension === 'pdf'">
+            <image-item
+              :src="scorePreviewSrc(event.url)"
+              :lazy-src="scorePreviewSrc(event.url)"
+              class="mb-2"
+            />
+            <div class="download">
+              Download:
+              <a :href="scoreSrc(event.url, 'pdf')">pdf</a>
+            </div>
+          </div>
+          <figcaption v-html="getEventTitle(event.title)"></figcaption>
         </figure>
       </div>
     </v-timeline-item>
@@ -110,6 +120,12 @@ export default {
     videoPosterSrc: function(url) {
       return encodeURI(baseUrl + url).replace(".mp4", "-preload.jpg");
     },
+    scoreSrc: function(url) {
+      return encodeURI(baseUrl + url);
+    },
+    scorePreviewSrc: function(url) {
+      return encodeURI(baseUrl + url).replace(".pdf", ".png");
+    },
     getTextContent: function(url, id) {
       url = url.replace(" ", "%20");
       url = baseUrl + url.replace(".txt", ".json");
@@ -118,6 +134,9 @@ export default {
         .then(json => {
           document.getElementById(id).innerHTML = json.text;
         });
+    },
+    getEventTitle: function(title) {
+      return title.replace("©", "<br />©").replace("--", "<br >");
     }
   },
   data: () => ({

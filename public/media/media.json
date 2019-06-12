@@ -15,23 +15,35 @@
         {
             "datetime":"2018-12-24 17:03:00",
             "extension":"wav",
-            "title":"Wenn Sterne blu\u0308hen - Klavier",
-            "url":"2018-12-24_17-03-00_Wenn Sterne blu\u0308hen - Klavier.wav"
+            "title":"Wenn Sterne blu\u0308hen -- Eva Gillhuber gewidmet",
+            "url":"2018-12-24_17-03-00_Wenn Sterne blu\u0308hen -- Eva Gillhuber gewidmet.wav"
         },
         {
             "datetime":"2018-06-26 06:30:14",
             "extension":"jpg",
             "height":2000,
-            "title":"Portrait Benediktbeuern - Fotograf - Jan Christlieb",
-            "url":"2018-06-26_06-30-14_Portrait Benediktbeuern - Fotograf - Jan Christlieb.jpg",
+            "title":"Portrait in Benediktbeuern \u00a9 Jan Christlieb",
+            "url":"2018-06-26_06-30-14_Portrait in Benediktbeuern \u00a9 Jan Christlieb.jpg",
             "width":2000
+        },
+        {
+            "datetime":"2017-12-21 20:07:26",
+            "extension":"pdf",
+            "title":"Leaves",
+            "url":"2017-12-21_20-07-26_Leaves.pdf"
+        },
+        {
+            "datetime":"2016-07-16 11:20:04",
+            "extension":"mp4",
+            "title":"Leaves",
+            "url":"2016-07-16_11-20-04_Leaves.mp4"
         },
         {
             "datetime":"2007-09-21 09:14:31",
             "extension":"jpg",
             "height":1880,
-            "title":"Ohne Titel - Fotograf - Alexander Bu\u0308rger",
-            "url":"2007-09-21_09-14-31_Ohne Titel - Fotograf - Alexander Bu\u0308rger.jpg",
+            "title":"Ohne Titel \u00a9 Alexander Bu\u0308rger",
+            "url":"2007-09-21_09-14-31_Ohne Titel \u00a9 Alexander Bu\u0308rger.jpg",
             "width":2816
         }
     ]
