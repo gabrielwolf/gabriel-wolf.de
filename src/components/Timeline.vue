@@ -8,10 +8,7 @@
     >
       <div>
         <figure>
-          <div
-            v-if="event.extension === 'wav' || event.extension === 'mp4'"
-            class="pt-4"
-          ></div>
+          <div class="pt-4"></div>
           <div class="date mb-2">{{ event.datetime }} Uhr</div>
           <image-item
             v-if="event.extension === 'jpg'"
