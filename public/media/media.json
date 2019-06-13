@@ -9,40 +9,46 @@
         {
             "datetime":"2019-01-27 00:27:04",
             "extension":"txt",
-            "title":"Hirnwichsen",
-            "url":"2019-01-27_00-27-04_Hirnwichsen.txt"
+            "title":"Hirnwichsen - Fragment",
+            "url":"2019-01-27_00-27-04_Hirnwichsen - Fragment.txt"
         },
         {
             "datetime":"2018-12-24 17:03:00",
             "extension":"wav",
-            "title":"Wenn Sterne blu\u0308hen -- Eva Gillhuber gewidmet",
-            "url":"2018-12-24_17-03-00_Wenn Sterne blu\u0308hen -- Eva Gillhuber gewidmet.wav"
+            "title":"Wenn Sterne blu\u0308hen - Klavier -- Eva Gillhuber gewidmet",
+            "url":"2018-12-24_17-03-00_Wenn Sterne blu\u0308hen - Klavier -- Eva Gillhuber gewidmet.wav"
         },
         {
             "datetime":"2018-11-26 03:52:23",
             "extension":"txt",
-            "title":"An Eva",
-            "url":"2018-11-26_03-52-23_An Eva.txt"
+            "title":"An Eva - Gedicht",
+            "url":"2018-11-26_03-52-23_An Eva - Gedicht.txt"
         },
         {
             "datetime":"2018-06-26 06:30:14",
             "extension":"jpg",
             "height":2000,
-            "title":"Portrait in Benediktbeuern \u00a9 Jan Christlieb",
-            "url":"2018-06-26_06-30-14_Portrait in Benediktbeuern \u00a9 Jan Christlieb.jpg",
+            "title":"In Benediktbeuern - Portrait \u00a9 Jan Christlieb",
+            "url":"2018-06-26_06-30-14_In Benediktbeuern - Portrait \u00a9 Jan Christlieb.jpg",
             "width":2000
+        },
+        {
+            "datetime":"2017-12-26 09:20:05",
+            "extension":"wav",
+            "title":"Die Su\u0308\u00dfe - Klavier",
+            "url":"2017-12-26_09-20-05_Die Su\u0308\u00dfe - Klavier.wav"
         },
         {
             "datetime":"2017-12-21 20:07:26",
             "extension":"pdf",
-            "title":"Leaves",
-            "url":"2017-12-21_20-07-26_Leaves.pdf"
+            "title":"Leaves - Klavier",
+            "url":"2017-12-21_20-07-26_Leaves - Klavier.pdf"
         },
         {
             "datetime":"2016-07-16 11:20:04",
             "extension":"mp4",
-            "title":"Leaves",
-            "url":"2016-07-16_11-20-04_Leaves.mp4"
+            "title":"Leaves - Klavier",
+            "url":"2016-07-16_11-20-04_Leaves - Klavier.mp4"
         },
         {
             "datetime":"2007-09-21 09:14:31",
