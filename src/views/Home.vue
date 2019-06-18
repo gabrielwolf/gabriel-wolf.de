@@ -15,12 +15,13 @@
               class="portrait-dark"
             /> </v-avatar
           ><br /><br />
-          <a tyrget="_blank" href="https://paypal.me/gabrielwolf23"
+          <a target="_blank" href="https://patreon.com/gabrielwolf"
+            >patreon.com/gabrielwolf</a
+          ><br />
+          <a target="_blank" href="https://paypal.me/gabrielwolf23"
             >paypal.me/gabrielwolf23</a
           >
           <h1 class="ma-3">
-            Ein Mensch.<br />
-            Ein Archiv.<br />
             Ein Versuch.
           </h1>
           <h2 class="mb-3 text-xs-center">
