@@ -29,7 +29,7 @@
 export default {
   name: "App",
   data() {
-    return { switchme: false };
+    return { switchme: true };
   },
   computed: {
     darkMode() {
