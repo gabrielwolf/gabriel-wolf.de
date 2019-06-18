@@ -13,19 +13,16 @@
               src="/portrait-dark.jpg"
               alt="Portrait Gabriel Wolf"
               class="portrait-dark"
-            />
-          </v-avatar>
+            /> </v-avatar
+          ><br /><br />
+          <a tyrget="_blank" href="https://paypal.me/gabrielwolf23"
+            >paypal.me/gabrielwolf23</a
+          >
           <h1 class="ma-3">
             Ein Mensch.<br />
             Ein Archiv.<br />
             Ein Versuch.
           </h1>
-          <p class="subheading font-weight-regular teaser-text">
-            Warum? Vieles aus gutem Grund.<br />
-            Einiges ohne Absicht.<br />
-            Manches zufällig.<br />
-            Nichts umsonst.
-          </p>
           <h2 class="mb-3 text-xs-center">
             Ein Zeitstrahl.
           </h2>

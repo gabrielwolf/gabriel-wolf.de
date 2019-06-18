@@ -1,10 +1,32 @@
 {
     "events":[
         {
-            "datetime":"2019-05-24 13:21:23",
-            "extension":"mp4",
-            "title":"Spendenaufruf",
-            "url":"2019-05-24_13-21-23_Spendenaufruf.mp4"
+            "datetime":"2019-05-04 14:54:33",
+            "extension":"txt",
+            "title":"An Dich",
+            "url":"2019-05-04_14-54-33_An Dich.txt"
+        },
+        {
+            "datetime":"2019-04-03 14:32:01",
+            "extension":"wav",
+            "title":"Amour fou - Harmonium und Klavier",
+            "url":"2019-04-03_14-32-01_Amour fou - Harmonium und Klavier.wav"
+        },
+        {
+            "datetime":"2019-03-26 15:03:09",
+            "extension":"jpg",
+            "height":1647,
+            "title":"Am Anfang des Sonnenhang",
+            "url":"2019-03-26_15-03-09_Am Anfang des Sonnenhang.jpg",
+            "width":2886
+        },
+        {
+            "datetime":"2019-01-30 07:44:00",
+            "extension":"jpg",
+            "height":2976,
+            "title":"Eine Morgenda\u0308mmerung -- Fu\u0308r Eva",
+            "url":"2019-01-30_07-44-00_Eine Morgenda\u0308mmerung -- Fu\u0308r Eva.jpg",
+            "width":3968
         },
         {
             "datetime":"2019-01-27 00:27:04",
@@ -13,10 +35,46 @@
             "url":"2019-01-27_00-27-04_Hirnwichsen - Fragment.txt"
         },
         {
+            "datetime":"2019-01-23 19:49:37",
+            "extension":"jpg",
+            "height":3968,
+            "title":"Lichtspiegelungen - Reiners Geburtstag",
+            "url":"2019-01-23_19-49-37_Lichtspiegelungen - Reiners Geburtstag.jpg",
+            "width":2976
+        },
+        {
+            "datetime":"2019-01-02 14:51:24",
+            "extension":"wav",
+            "title":"Weh und Ach - Gedicht",
+            "url":"2019-01-02_14-51-24_Weh und Ach - Gedicht.wav"
+        },
+        {
+            "datetime":"2018-12-31 16:58:36",
+            "extension":"jpg",
+            "height":3968,
+            "title":"Wolverine",
+            "url":"2018-12-31_16-58-36_Wolverine.jpg",
+            "width":2976
+        },
+        {
+            "datetime":"2018-12-29 00:44:00",
+            "extension":"txt",
+            "title":"Tagebuch",
+            "url":"2018-12-29_00-44-00_Tagebuch.txt"
+        },
+        {
             "datetime":"2018-12-24 17:03:00",
             "extension":"wav",
             "title":"Wenn Sterne blu\u0308hen - Klavier -- Eva Gillhuber gewidmet",
             "url":"2018-12-24_17-03-00_Wenn Sterne blu\u0308hen - Klavier -- Eva Gillhuber gewidmet.wav"
+        },
+        {
+            "datetime":"2018-12-10 09:01:45",
+            "extension":"jpg",
+            "height":2976,
+            "title":"Nicht mit dem Kopf",
+            "url":"2018-12-10_09-01-45_Nicht mit dem Kopf.jpg",
+            "width":2976
         },
         {
             "datetime":"2018-11-26 03:52:23",
@@ -33,6 +91,58 @@
             "width":2000
         },
         {
+            "datetime":"2018-04-26 16:32:01",
+            "extension":"wav",
+            "title":"Klagelied - Klarinette",
+            "url":"2018-04-26_16-32-01_Klagelied - Klarinette.wav"
+        },
+        {
+            "datetime":"2018-04-09 06:05:20",
+            "extension":"txt",
+            "title":"Bildanalyse Amokfahrt in Mu\u0308nster",
+            "url":"2018-04-09_06-05-20_Bildanalyse Amokfahrt in Mu\u0308nster.txt"
+        },
+        {
+            "datetime":"2018-04-08 15:56:00",
+            "extension":"jpg",
+            "height":432,
+            "title":"Bildanalyse Amokfahrt in Mu\u0308nster",
+            "url":"2018-04-08_15-56-00_Bildanalyse Amokfahrt in Mu\u0308nster.jpg",
+            "width":768
+        },
+        {
+            "datetime":"2018-04-02 18:00:04",
+            "extension":"jpg",
+            "height":1427,
+            "title":"The fuckin Thu\u0308rme I",
+            "url":"2018-04-02_18-00-04_The fuckin Thu\u0308rme I.jpg",
+            "width":3408
+        },
+        {
+            "datetime":"2018-02-04 17:42:52",
+            "extension":"jpg",
+            "height":2171,
+            "title":"The fuckin Thu\u0308rme II",
+            "url":"2018-02-04_17-42-52_The fuckin Thu\u0308rme II.jpg",
+            "width":5167
+        },
+        {
+            "datetime":"2018-02-04 17:42:14",
+            "extension":"jpg",
+            "height":2212,
+            "title":"The fuckin Thu\u0308rme III",
+            "url":"2018-02-04_17-42-14_The fuckin Thu\u0308rme III.jpg",
+            "width":5280
+        },
+        {
+            "datetime":"2018-01-18 16:06:47",
+            "extension":"jpg",
+            "height":3456,
+            "title":"So nah und doch so fern",
+            "url":"2018-01-18_16-06-47_So nah und doch so fern.jpg",
+            "width":5184
+        },
+        {
             "datetime":"2017-12-26 09:20:05",
             "extension":"wav",
             "title":"Die Su\u0308\u00dfe - Klavier",
@@ -45,10 +155,168 @@
             "url":"2017-12-21_20-07-26_Leaves - Klavier.pdf"
         },
         {
+            "datetime":"2017-06-03 20:58:53",
+            "extension":"jpg",
+            "height":1280,
+            "title":"Derniere Halb auf dem Baum",
+            "url":"2017-06-03_20-58-53_Derniere Halb auf dem Baum.jpg",
+            "width":960
+        },
+        {
+            "datetime":"2017-05-16 16:32:15",
+            "extension":"mp4",
+            "title":"Nachtrag Gedanken zu 8 Hz",
+            "url":"2017-05-16_16-32-15_Nachtrag Gedanken zu 8 Hz.mp4"
+        },
+        {
+            "datetime":"2017-05-16 16:27:14",
+            "extension":"mp4",
+            "title":"Gedanken zu 8 Hz",
+            "url":"2017-05-16_16-27-14_Gedanken zu 8 Hz.mp4"
+        },
+        {
+            "datetime":"2017-04-01 11:10:09",
+            "extension":"wav",
+            "title":"Keine Tarantella aber dafu\u0308r in d-moll - Klavier",
+            "url":"2017-04-01_11-10-09_Keine Tarantella aber dafu\u0308r in d-moll - Klavier.wav"
+        },
+        {
+            "datetime":"2017-01-10 14:27:03",
+            "extension":"pdf",
+            "title":"Keine Tarantella aber dafu\u0308r in d-moll - Klavier",
+            "url":"2017-01-10_14-27-03_Keine Tarantella aber dafu\u0308r in d-moll - Klavier.pdf"
+        },
+        {
+            "datetime":"2016-11-29 15:04:23",
+            "extension":"wav",
+            "title":"Fantasie - Klavier -- Sergej Gordon und seiner Oma gewidmet",
+            "url":"2016-11-29_15-04-23_Fantasie - Klavier -- Sergej Gordon und seiner Oma gewidmet.wav"
+        },
+        {
+            "datetime":"2016-11-28 20:56:30",
+            "extension":"wav",
+            "title":"Schlaflied fu\u0308r Saskia Beil - Klavier",
+            "url":"2016-11-28_20-56-30_Schlaflied fu\u0308r Saskia Beil - Klavier.wav"
+        },
+        {
             "datetime":"2016-07-16 11:20:04",
             "extension":"mp4",
             "title":"Leaves - Klavier",
             "url":"2016-07-16_11-20-04_Leaves - Klavier.mp4"
+        },
+        {
+            "datetime":"2016-01-29 17:37:33",
+            "extension":"wav",
+            "title":"Sanewalz - Improvisation - Klavier -- Anja Hilburger gewidmet",
+            "url":"2016-01-29_17-37-33_Sanewalz - Improvisation - Klavier -- Anja Hilburger gewidmet.wav"
+        },
+        {
+            "datetime":"2016-01-14 23:40:00",
+            "extension":"wav",
+            "title":"Von fernen La\u0308ndern und Menschen - Klavier -- Theresa Skoruppa gewidmet",
+            "url":"2016-01-14_23-40-00_Von fernen La\u0308ndern und Menschen - Klavier -- Theresa Skoruppa gewidmet.wav"
+        },
+        {
+            "datetime":"2015-06-01 18:07:57",
+            "extension":"jpg",
+            "height":1274,
+            "title":"Theaterprobe - Der Sturm - Shakespeare \u00a9 Beatrice Ellinger",
+            "url":"2015-06-01_18-07-57_Theaterprobe - Der Sturm - Shakespeare \u00a9 Beatrice Ellinger.jpg",
+            "width":2064
+        },
+        {
+            "datetime":"2015-05-27 03:49:23",
+            "extension":"wav",
+            "title":"Autobahn - Klavier -- Benedikt Brachtel gewidmet",
+            "url":"2015-05-27_03-49-23_Autobahn - Klavier -- Benedikt Brachtel gewidmet.wav"
+        },
+        {
+            "datetime":"2015-04-16 18:31:40",
+            "extension":"jpg",
+            "height":6965,
+            "title":"Upside down - Zeichnung 21x30cm -- Aktzeichenklasse Rudi Berr",
+            "url":"2015-04-16_18-31-40_Upside down - Zeichnung 21x30cm -- Aktzeichenklasse Rudi Berr.jpg",
+            "width":4868
+        },
+        {
+            "datetime":"2014-02-01 17:06:40",
+            "extension":"jpg",
+            "height":3240,
+            "title":"Letzter Spaziergang",
+            "url":"2014-02-01_17-06-40_Letzter Spaziergang.jpg",
+            "width":5184
+        },
+        {
+            "datetime":"2014-02-01 16:59:19",
+            "extension":"jpg",
+            "height":5184,
+            "title":"Letzter Spaziergang",
+            "url":"2014-02-01_16-59-19_Letzter Spaziergang.jpg",
+            "width":3038
+        },
+        {
+            "datetime":"2014-02-01 16:57:29",
+            "extension":"jpg",
+            "height":3456,
+            "title":"Letzter Spaziergang \u00a9 Elly Brachtel",
+            "url":"2014-02-01_16-57-29_Letzter Spaziergang \u00a9 Elly Brachtel.jpg",
+            "width":5184
+        },
+        {
+            "datetime":"2014-02-01 16:50:22",
+            "extension":"jpg",
+            "height":1788,
+            "title":"Letzter Spaziergang",
+            "url":"2014-02-01_16-50-22_Letzter Spaziergang.jpg",
+            "width":3926
+        },
+        {
+            "datetime":"2013-12-29 08:31:47",
+            "extension":"jpg",
+            "height":3453,
+            "title":"Licht und Milchglas - Zeichnung 21x15cm -- Danuviusklinik Pfaffenhofen",
+            "url":"2013-12-29_08-31-47_Licht und Milchglas - Zeichnung 21x15cm -- Danuviusklinik Pfaffenhofen.jpg",
+            "width":4930
+        },
+        {
+            "datetime":"2013-05-03 23:25:00",
+            "extension":"wav",
+            "title":"Musik fu\u0308r ein fiktives Computerspiel",
+            "url":"2013-05-03_23-25-00_Musik fu\u0308r ein fiktives Computerspiel.wav"
+        },
+        {
+            "datetime":"2012-04-04 19:08:57",
+            "extension":"wav",
+            "title":"Nureea - Electronica",
+            "url":"2012-04-04_19-08-57_Nureea - Electronica.wav"
+        },
+        {
+            "datetime":"2012-02-24 06:58:01",
+            "extension":"wav",
+            "title":"Passing bye - Black and Schwarz -- Recording-Abschlussarbeit SAE",
+            "url":"2012-02-24_06-58-01_Passing bye - Black and Schwarz -- Recording-Abschlussarbeit SAE.wav"
+        },
+        {
+            "datetime":"2011-12-17 14:13:12",
+            "extension":"wav",
+            "title":"Die Nachtigall - Ho\u0308rspiel nach Hans Christian Andersen -- Fragment",
+            "url":"2011-12-17_14-13-12_Die Nachtigall - Ho\u0308rspiel nach Hans Christian Andersen -- Fragment.wav"
+        },
+        {
+            "datetime":"2008-05-20 12:50:25",
+            "extension":"jpg",
+            "height":2136,
+            "title":"Ohne Titel",
+            "url":"2008-05-20_12-50-25_Ohne Titel.jpg",
+            "width":2848
+        },
+        {
+            "datetime":"2008-05-20 12:48:44",
+            "extension":"jpg",
+            "height":2136,
+            "title":"Ohne Titel \u00a9 Elly Brachtel",
+            "url":"2008-05-20_12-48-44_Ohne Titel \u00a9 Elly Brachtel.jpg",
+            "width":2848
         },
         {
             "datetime":"2007-09-21 09:14:31",
@@ -57,6 +325,24 @@
             "title":"Ohne Titel \u00a9 Alexander Bu\u0308rger",
             "url":"2007-09-21_09-14-31_Ohne Titel \u00a9 Alexander Bu\u0308rger.jpg",
             "width":2816
+        },
+        {
+            "datetime":"2002-11-10 18:43:55",
+            "extension":"wav",
+            "title":"Hass - Glitch",
+            "url":"2002-11-10_18-43-55_Hass - Glitch.wav"
+        },
+        {
+            "datetime":"2002-06-10 00:12:18",
+            "extension":"wav",
+            "title":"Vorsicht Drum and Bass",
+            "url":"2002-06-10_00-12-18_Vorsicht Drum and Bass.wav"
+        },
+        {
+            "datetime":"2001-06-01 12:27:04",
+            "extension":"wav",
+            "title":"Eine lila Rose fu\u0308r Vera Suschko - Klavier",
+            "url":"2001-06-01_12-27-04_Eine lila Rose fu\u0308r Vera Suschko - Klavier.wav"
         }
     ]
 }

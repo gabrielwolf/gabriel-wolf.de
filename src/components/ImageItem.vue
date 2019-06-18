@@ -3,6 +3,7 @@
     :data-src="lazySrc"
     :data-srcset="lazySrcset"
     :style="style"
+    :alt="alt"
     class="img-responsive"
   />
 </template>
@@ -31,6 +32,10 @@ export default {
     },
     width: {
       type: Number,
+      default: null
+    },
+    alt: {
+      type: String,
       default: null
     }
   },

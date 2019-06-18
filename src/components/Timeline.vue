@@ -8,7 +8,6 @@
     >
       <div>
         <figure>
-          <div class="pt-4"></div>
           <div class="date mb-2">{{ event.datetime }} Uhr</div>
           <image-item
             v-if="event.extension === 'jpg'"
@@ -17,6 +16,7 @@
             :src="imagePreloadSrc(event.url)"
             :lazy-src="imageLazySrc(event.url)"
             :lazy-srcset="imageLazySrcSet(event.url)"
+            :alt="event.title"
             class="timeline-image mb-2"
           />
           <div v-if="event.extension === 'wav'">
@@ -69,6 +69,7 @@
             <image-item
               :src="scorePreviewSrc(event.url)"
               :lazy-src="scorePreviewSrc(event.url)"
+              :alt="event.title"
               class="mb-2"
             />
             <div class="download">
