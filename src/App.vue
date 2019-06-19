@@ -101,5 +101,7 @@ h3
   color #ddf !important
 
   .v-system-bar
-    background #222 !important
+    background #171717 !important
+    a
+      color #1976d2 !important
 </style>

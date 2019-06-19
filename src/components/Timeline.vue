@@ -3,7 +3,7 @@
     <v-timeline-item
       v-for="(event, i) in json.events"
       :key="i"
-      color="primary"
+      color="#ccc"
       small
     >
       <div>
