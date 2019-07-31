@@ -3,8 +3,14 @@
         {
             "datetime":"2019-05-04 14:54:33",
             "extension":"txt",
-            "title":"An Dich",
-            "url":"2019-05-04_14-54-33_An Dich.txt"
+            "title":"Ein Versuch",
+            "url":"2019-05-04_14-54-33_Ein Versuch.txt"
+        },
+        {
+            "datetime":"2019-04-08 14:08:16",
+            "extension":"wav",
+            "title":"Fertzweikt",
+            "url":"2019-04-08_14-08-16_Fertzweikt.wav"
         },
         {
             "datetime":"2019-04-03 14:32:01",
@@ -21,12 +27,32 @@
             "width":2886
         },
         {
+            "datetime":"2019-02-26 19:35:46",
+            "extension":"wav",
+            "title":"Blue Planet - Vogelstimmen, Klavier und Gesang -- Sounds Eva Gillhuber, Gesang Constanze Hosemann",
+            "url":"2019-02-26_19-35-46_Blue Planet - Vogelstimmen, Klavier und Gesang -- Sounds Eva Gillhuber, Gesang Constanze Hosemann.wav"
+        },
+        {
+            "datetime":"2019-01-30 18:49:27",
+            "extension":"jpg",
+            "height":1146,
+            "title":"Eine Abendda\u0308mmerung -- Fu\u0308r Eva",
+            "url":"2019-01-30_18-49-27_Eine Abendda\u0308mmerung -- Fu\u0308r Eva.jpg",
+            "width":2037
+        },
+        {
             "datetime":"2019-01-30 07:44:00",
             "extension":"jpg",
-            "height":2976,
+            "height":1434,
             "title":"Eine Morgenda\u0308mmerung -- Fu\u0308r Eva",
             "url":"2019-01-30_07-44-00_Eine Morgenda\u0308mmerung -- Fu\u0308r Eva.jpg",
-            "width":3968
+            "width":2550
+        },
+        {
+            "datetime":"2019-01-27 19:01:23",
+            "extension":"mp4",
+            "title":"Schostakowitsch Walzer - Akkordeon",
+            "url":"2019-01-27_19-01-23_Schostakowitsch Walzer - Akkordeon.mp4"
         },
         {
             "datetime":"2019-01-27 00:27:04",
@@ -81,6 +107,12 @@
             "extension":"txt",
             "title":"An Eva - Gedicht",
             "url":"2018-11-26_03-52-23_An Eva - Gedicht.txt"
+        },
+        {
+            "datetime":"2018-09-11 01:15:09",
+            "extension":"txt",
+            "title":"Was sind deine Sexuellen Fantasien - Autoficktives Interview",
+            "url":"2018-09-11_01-15-09_Was sind deine Sexuellen Fantasien - Autoficktives Interview.txt"
         },
         {
             "datetime":"2018-06-26 06:30:14",
@@ -163,22 +195,102 @@
             "width":960
         },
         {
-            "datetime":"2017-05-16 16:32:15",
-            "extension":"mp4",
-            "title":"Nachtrag Gedanken zu 8 Hz",
-            "url":"2017-05-16_16-32-15_Nachtrag Gedanken zu 8 Hz.mp4"
-        },
-        {
-            "datetime":"2017-05-16 16:27:14",
-            "extension":"mp4",
-            "title":"Gedanken zu 8 Hz",
-            "url":"2017-05-16_16-27-14_Gedanken zu 8 Hz.mp4"
-        },
-        {
             "datetime":"2017-04-01 11:10:09",
             "extension":"wav",
             "title":"Keine Tarantella aber dafu\u0308r in d-moll - Klavier",
             "url":"2017-04-01_11-10-09_Keine Tarantella aber dafu\u0308r in d-moll - Klavier.wav"
+        },
+        {
+            "datetime":"2017-03-11 12:25:15",
+            "extension":"jpg",
+            "height":1440,
+            "title":"nach u\u0308bergestern - Cover",
+            "url":"2017-03-11_12-25-15_nach u\u0308bergestern - Cover.jpg",
+            "width":1440
+        },
+        {
+            "datetime":"2017-03-11 12:25:15",
+            "extension":"wav",
+            "title":"nach u\u0308bergestern - 14 - Aber dein Walzer bleibt - Klavier",
+            "url":"2017-03-11_12-25-15_nach u\u0308bergestern - 14 - Aber dein Walzer bleibt - Klavier.wav"
+        },
+        {
+            "datetime":"2017-03-11 12:25:15",
+            "extension":"wav",
+            "title":"nach u\u0308bergestern - 13 - Kein Mond ist aufgegangen - Klavier",
+            "url":"2017-03-11_12-25-15_nach u\u0308bergestern - 13 - Kein Mond ist aufgegangen - Klavier.wav"
+        },
+        {
+            "datetime":"2017-03-11 12:25:15",
+            "extension":"wav",
+            "title":"nach u\u0308bergestern - 12 - Warum - Klavier",
+            "url":"2017-03-11_12-25-15_nach u\u0308bergestern - 12 - Warum - Klavier.wav"
+        },
+        {
+            "datetime":"2017-03-11 12:25:15",
+            "extension":"wav",
+            "title":"nach u\u0308bergestern - 11 - Aha Zehen - Finde mich - Klavier",
+            "url":"2017-03-11_12-25-15_nach u\u0308bergestern - 11 - Aha Zehen - Finde mich - Klavier.wav"
+        },
+        {
+            "datetime":"2017-03-11 12:25:15",
+            "extension":"wav",
+            "title":"nach u\u0308bergestern - 10 - Die Sonne steht schon tief - Klavier",
+            "url":"2017-03-11_12-25-15_nach u\u0308bergestern - 10 - Die Sonne steht schon tief - Klavier.wav"
+        },
+        {
+            "datetime":"2017-03-11 12:25:15",
+            "extension":"wav",
+            "title":"nach u\u0308bergestern - 09 - Im Wald Schweben - Klavier",
+            "url":"2017-03-11_12-25-15_nach u\u0308bergestern - 09 - Im Wald Schweben - Klavier.wav"
+        },
+        {
+            "datetime":"2017-03-11 12:25:15",
+            "extension":"wav",
+            "title":"nach u\u0308bergestern - 08 - Ruhig, mein Webstuhl - Klavier",
+            "url":"2017-03-11_12-25-15_nach u\u0308bergestern - 08 - Ruhig, mein Webstuhl - Klavier.wav"
+        },
+        {
+            "datetime":"2017-03-11 12:25:15",
+            "extension":"wav",
+            "title":"nach u\u0308bergestern - 07 - Hast du mich wirklich vergessen - Klavier und Flo\u0308te",
+            "url":"2017-03-11_12-25-15_nach u\u0308bergestern - 07 - Hast du mich wirklich vergessen - Klavier und Flo\u0308te.wav"
+        },
+        {
+            "datetime":"2017-03-11 12:25:15",
+            "extension":"wav",
+            "title":"nach u\u0308bergestern - 06 - Gru\u00df aus Usbekistan - Klavier",
+            "url":"2017-03-11_12-25-15_nach u\u0308bergestern - 06 - Gru\u00df aus Usbekistan - Klavier.wav"
+        },
+        {
+            "datetime":"2017-03-11 12:25:15",
+            "extension":"wav",
+            "title":"nach u\u0308bergestern - 05 - Abschied III - Klavier",
+            "url":"2017-03-11_12-25-15_nach u\u0308bergestern - 05 - Abschied III - Klavier.wav"
+        },
+        {
+            "datetime":"2017-03-11 12:25:15",
+            "extension":"wav",
+            "title":"nach u\u0308bergestern - 04 - Abschied II - Klavier",
+            "url":"2017-03-11_12-25-15_nach u\u0308bergestern - 04 - Abschied II - Klavier.wav"
+        },
+        {
+            "datetime":"2017-03-11 12:25:15",
+            "extension":"wav",
+            "title":"nach u\u0308bergestern - 03 - Abschied I - Klavier",
+            "url":"2017-03-11_12-25-15_nach u\u0308bergestern - 03 - Abschied I - Klavier.wav"
+        },
+        {
+            "datetime":"2017-03-11 12:25:15",
+            "extension":"wav",
+            "title":"nach u\u0308bergestern - 02 - Ballade - Klavier",
+            "url":"2017-03-11_12-25-15_nach u\u0308bergestern - 02 - Ballade - Klavier.wav"
+        },
+        {
+            "datetime":"2017-03-11 12:25:15",
+            "extension":"wav",
+            "title":"nach u\u0308bergestern - 01 - Liedchen mein Liebchen - Klavier",
+            "url":"2017-03-11_12-25-15_nach u\u0308bergestern - 01 - Liedchen mein Liebchen - Klavier.wav"
         },
         {
             "datetime":"2017-01-10 14:27:03",
@@ -195,8 +307,8 @@
         {
             "datetime":"2016-11-28 20:56:30",
             "extension":"wav",
-            "title":"Schlaflied fu\u0308r Saskia Beil - Klavier",
-            "url":"2016-11-28_20-56-30_Schlaflied fu\u0308r Saskia Beil - Klavier.wav"
+            "title":"Studie - Schlaflied fu\u0308r Saskia Beil - Klavier",
+            "url":"2016-11-28_20-56-30_Studie - Schlaflied fu\u0308r Saskia Beil - Klavier.wav"
         },
         {
             "datetime":"2016-07-16 11:20:04",
@@ -234,9 +346,25 @@
             "datetime":"2015-04-16 18:31:40",
             "extension":"jpg",
             "height":6965,
-            "title":"Upside down - Zeichnung 21x30cm -- Aktzeichenklasse Rudi Berr",
-            "url":"2015-04-16_18-31-40_Upside down - Zeichnung 21x30cm -- Aktzeichenklasse Rudi Berr.jpg",
+            "title":"Upside down - Zeichnung 21x29,7cm -- Aktzeichenklasse Rudi Berr",
+            "url":"2015-04-16_18-31-40_Upside down - Zeichnung 21x29,7cm -- Aktzeichenklasse Rudi Berr.jpg",
             "width":4868
+        },
+        {
+            "datetime":"2015-04-16 18:31:40",
+            "extension":"jpg",
+            "height":2258,
+            "title":"Inside Out - Zeichnung 21x29,7cm -- Aktzeichenklasse Rudi Berr",
+            "url":"2015-04-16_18-31-40_Inside Out - Zeichnung 21x29,7cm -- Aktzeichenklasse Rudi Berr.jpg",
+            "width":1580
+        },
+        {
+            "datetime":"2015-04-16 18:31:40",
+            "extension":"jpg",
+            "height":2263,
+            "title":"Down under - Zeichnung 21x29,7cm -- Aktzeichenklasse Rudi Berr",
+            "url":"2015-04-16_18-31-40_Down under - Zeichnung 21x29,7cm -- Aktzeichenklasse Rudi Berr.jpg",
+            "width":1582
         },
         {
             "datetime":"2014-02-01 17:06:40",
@@ -327,22 +455,32 @@
             "width":2816
         },
         {
+            "datetime":"2003-07-10 19:22:48",
+            "extension":"jpg",
+            "height":1680,
+            "title":"Konzert Leistungskurs Musik \u00a9 Robert Fa\u0308ssler",
+            "url":"2003-07-10_19-22-48_Konzert Leistungskurs Musik \u00a9 Robert Fa\u0308ssler.jpg",
+            "width":2240
+        },
+        {
+            "datetime":"2003-07-10 19:22:15",
+            "extension":"jpg",
+            "height":1680,
+            "title":"Konzert Leistungskurs Musik \u00a9 Robert Fa\u0308ssler",
+            "url":"2003-07-10_19-22-15_Konzert Leistungskurs Musik \u00a9 Robert Fa\u0308ssler.jpg",
+            "width":2240
+        },
+        {
             "datetime":"2002-11-10 18:43:55",
             "extension":"wav",
-            "title":"Hass - Glitch",
-            "url":"2002-11-10_18-43-55_Hass - Glitch.wav"
+            "title":"Wut - Drum and Bass",
+            "url":"2002-11-10_18-43-55_Wut - Drum and Bass.wav"
         },
         {
             "datetime":"2002-06-10 00:12:18",
             "extension":"wav",
             "title":"Vorsicht Drum and Bass",
             "url":"2002-06-10_00-12-18_Vorsicht Drum and Bass.wav"
-        },
-        {
-            "datetime":"2001-06-01 12:27:04",
-            "extension":"wav",
-            "title":"Eine lila Rose fu\u0308r Vera Suschko - Klavier",
-            "url":"2001-06-01_12-27-04_Eine lila Rose fu\u0308r Vera Suschko - Klavier.wav"
         }
     ]
 }

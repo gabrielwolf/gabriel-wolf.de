@@ -3,9 +3,10 @@
 https://laracasts.com/series/learn-vue-2-step-by-step/episodes/9
 
 - Frontend: UI
-  - ToDo Lightbox für die Bilder
+  - Slider, der den Benutzer durch die Jahre sliden lässt
+  - Lightbox für die Bilder
     https://codepen.io/DCzajkowski/pen/rzOErW
-  - ToDo Inhalte dynamisch zentrieren
+  - Inhalte dynamisch zentrieren
   - Bei orientation mobil neu berechnen
   + Darkmode Simple (Nur Farbe ändern)
   + Farben darktheme
@@ -15,7 +16,8 @@ https://laracasts.com/series/learn-vue-2-step-by-step/episodes/9
     https://stackoverflow.com/questions/1248081/get-the-browser-viewport-dimensions-with-javascript#8876069
 
 - Frontend: Funktionalität
-  - ToDo Dark mode
+  - Beschränken der Anzeige auf 15 Einträge
+  - Dark mode
     - Schema klären
   + Texte automatisch einklappen CSS http://jsfiddle.net/ExplosionPIlls/6sj4e/
   + Textdateien aus JSON dynamisch lesen

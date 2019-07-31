@@ -22,11 +22,8 @@
             >paypal.me/gabrielwolf23</a
           >
           <h1 class="ma-3">
-            Ein Versuch.
-          </h1>
-          <h2 class="mb-3 text-xs-center">
             Ein Zeitstrahl.
-          </h2>
+          </h1>
         </v-flex>
         <Timeline />
       </v-flex>
