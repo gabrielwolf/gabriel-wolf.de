@@ -136,6 +136,11 @@ export default {
     },
     getEventTitle: function(title) {
       return title.replace("©", "<br />©").replace("--", "<br >");
+    },
+    handleScroll(event) {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        this.page++;
+      }
     }
   },
   data: () => ({
@@ -144,12 +149,16 @@ export default {
     page: 1,
     pageSize: 10
   }),
-  created: function() {
+  created() {
     fetch("/media/media.json")
       .then(r => r.json())
       .then(json => {
         this.json = json;
       });
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
   components: {
     "image-item": ImageItem
@@ -170,13 +179,6 @@ export default {
       if (typeof this.json.events == "object")
         return this.json.events.slice(0, this.page * this.pageSize);
     }
-  },
-  mounted() {
-    // window.onscroll = function(ev) {
-    //if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-    //    this.page++;
-    //}
-    //};
   }
 };
 </script>
