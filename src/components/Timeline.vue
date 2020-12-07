@@ -1,7 +1,7 @@
 <template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
   <v-timeline :dense="denseMode">
     <v-timeline-item
-      v-for="(event, i) in json.events"
+      v-for="(event, i) in eventItems"
       :key="i"
       color="#ccc"
       small
@@ -85,10 +85,11 @@
 </template>
 
 <script>
+/* eslint-disable */
 import ImageItem from "@/components/ImageItem.vue";
 
-// let baseUrl = "https://gabriel-wolf.test/";
-let baseUrl = "https://gabriel-wolf.de/media/";
+let baseUrl = "https://gabriel-wolf.test/";
+// let baseUrl = "https://gabriel-wolf.de/media/";
 
 export default {
   methods: {
@@ -139,7 +140,9 @@ export default {
   },
   data: () => ({
     json: [],
-    dense: true
+    dense: true,
+    page: 1,
+    pageSize: 10
   }),
   created: function() {
     fetch("/media/media.json")
@@ -162,70 +165,90 @@ export default {
       } else {
         return false;
       }
+    },
+    eventItems() {
+      if (typeof this.json.events == "object")
+        return this.json.events.slice(0, this.page * this.pageSize);
     }
+  },
+  mounted() {
+    // window.onscroll = function(ev) {
+    //if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    //    this.page++;
+    //}
+    //};
   }
 };
 </script>
 
 <style scoped lang="stylus">
 /* General */
-
-.not-visible
-  visibility hidden
+.not-visible {
+  visibility: hidden;
+}
 
 /* Timeline */
+.date, figcaption {
+  color: #777;
+}
 
-.date, figcaption
-  color #777
+.v-timeline-item__body > div {
+  display: block;
+}
 
-.v-timeline-item__body > div
-  display block
-
-.v-timeline-item
-  margin-bottom 8rem
-
+.v-timeline-item {
+  margin-bottom: 8rem;
+}
 
 /* Audio and Video */
+.timeline-image, .timeline-video, .timeline-audio {
+  max-width: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+}
 
-.timeline-image, .timeline-video, .timeline-audio
-  max-width 100%
-  margin 0 auto
-  vertical-align middle
-
-.timeline-audio
-  display inline-block !important
+.timeline-audio {
+  display: inline-block !important;
+}
 
 /* Text */
+.timeline-text {
+  text-align: left;
+}
 
-.timeline-text
-  text-align left
+.timeline-text-container {
+  position: relative;
+  margin-bottom: 2.5rem;
 
-.timeline-text-container
-  position relative
-  margin-bottom 2.5rem
+  label {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    padding-top: 0.5rem;
+    cursor: pointer;
+    color: #1976d2;
+    text-align: left;
+  }
 
-  label
-    position absolute
-    top 100%
-    width 100%
-    padding-top 0.5rem
-    cursor pointer
-    color #1976d2
-    text-align left
+  input {
+    display: none;
+  }
 
-  input
-    display none
+  label:after {
+    content: 'mehr lesen';
+  }
 
-  label:after
-    content "mehr lesen"
+  input:checked+label:after {
+    content: 'weniger lesen';
+  }
 
-  input:checked+label:after
-    content "weniger lesen"
+  input:checked~div {
+    height: 100%;
+  }
+}
 
-  input:checked~div
-    height 100%
-
-.timeline-text-content
-  height 100px
-  overflow hidden
+.timeline-text-content {
+  height: 100px;
+  overflow: hidden;
+}
 </style>
