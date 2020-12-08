@@ -88,8 +88,8 @@
 /* eslint-disable */
 import ImageItem from "@/components/ImageItem.vue";
 
-let baseUrl = "https://gabriel-wolf.test/";
-// let baseUrl = "https://gabriel-wolf.de/media/";
+// let baseUrl = "https://gabriel-wolf.test/";
+let baseUrl = "https://gabriel-wolf.de/media/";
 
 export default {
   methods: {
@@ -138,7 +138,10 @@ export default {
       return title.replace("©", "<br />©").replace("--", "<br >");
     },
     handleScroll(event) {
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+      if (
+        window.innerHeight + window.scrollY >=
+        document.body.offsetHeight - 450
+      ) {
         this.page++;
       }
     }
