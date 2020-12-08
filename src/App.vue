@@ -18,7 +18,6 @@
       height="39px"
     >
       <router-link to="/">Home</router-link>
-      <a target="_blank" href="https://wolfzeit.com">W O L F Z E I T</a>
       <router-link to="/impressum">Impressum</router-link>
       <router-link to="/datenschutz">Datenschutz</router-link>
       <router-link to="/copyleft">Copyleft</router-link>
