@@ -19,6 +19,16 @@
             :alt="event.title"
             class="timeline-image mb-2"
           />
+          <image-item
+            v-if="event.extension === 'png'"
+            :width="event.width"
+            :height="event.height"
+            :src="imagePreloadSrc(event.url)"
+            :lazy-src="imageLazySrc(event.url)"
+            :lazy-srcset="imageLazySrcSet(event.url)"
+            :alt="event.title"
+            class="timeline-image mb-2"
+          />
           <div v-if="event.extension === 'wav'">
             <audio
               controls

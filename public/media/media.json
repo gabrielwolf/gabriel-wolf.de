@@ -1,6 +1,78 @@
 {
     "events":[
         {
+            "datetime":"2021-04-06 00:32:12",
+            "extension":"png",
+            "title":"Monochromatische Anomalie - Collage in HDR",
+            "url":"2021-04-06_00-32-12_Monochromatische Anomalie - Collage in HDR.png"
+        },
+        {
+            "datetime":"2021-04-05 01:11:08",
+            "extension":"mp4",
+            "title":"Die dunkelgraue Kugel",
+            "url":"2021-04-05_01-11-08_Die dunkelgraue Kugel.mp4"
+        },
+        {
+            "datetime":"2021-03-12 10:28:01",
+            "extension":"jpg",
+            "height":2996,
+            "title":"Who do you wanna be III",
+            "url":"2021-03-12_10-28-01_Who do you wanna be III.jpg",
+            "width":4847
+        },
+        {
+            "datetime":"2021-03-05 16:59:58",
+            "extension":"wav",
+            "title":"Flegel - Klavier und Sopran Sax -- Fu\u0308r Didi",
+            "url":"2021-03-05_16-59-58_Flegel - Klavier und Sopran Sax -- Fu\u0308r Didi.wav"
+        },
+        {
+            "datetime":"2021-01-28 17:01:02",
+            "extension":"wav",
+            "title":"Letzter Versuch - Klavier -- Fu\u0308r Papa",
+            "url":"2021-01-28_17-01-02_Letzter Versuch - Klavier -- Fu\u0308r Papa.wav"
+        },
+        {
+            "datetime":"2021-01-08 20:27:22",
+            "extension":"jpg",
+            "height":3496,
+            "title":"Abstraktiv Klassisch - Albumcover",
+            "url":"2021-01-08_20-27-22_Abstraktiv Klassisch - Albumcover.jpg",
+            "width":3496
+        },
+        {
+            "datetime":"2020-12-07 20:29:13",
+            "extension":"wav",
+            "title":"Abstraktiv Klassisch - Computed -- Fu\u0308r Sylwia Bogacka",
+            "url":"2020-12-07_20-29-13_Abstraktiv Klassisch - Computed -- Fu\u0308r Sylwia Bogacka.wav"
+        },
+        {
+            "datetime":"2020-12-06 13:59:16",
+            "extension":"wav",
+            "title":"Abstraktiv Klassisch - Melody -- Fu\u0308r Sylwia Bogacka",
+            "url":"2020-12-06_13-59-16_Abstraktiv Klassisch - Melody -- Fu\u0308r Sylwia Bogacka.wav"
+        },
+        {
+            "datetime":"2020-12-03 15:52:00",
+            "extension":"mp4",
+            "title":"Wariacje sur le mot kurwa",
+            "url":"2020-12-03_15-52-00_Wariacje sur le mot kurwa.mp4"
+        },
+        {
+            "datetime":"2020-12-01 00:00:00",
+            "extension":"mp4",
+            "title":"Movement",
+            "url":"2020-12-01_Movement.mp4"
+        },
+        {
+            "datetime":"2020-11-29 14:52:28",
+            "extension":"jpg",
+            "height":2254,
+            "title":"Refleksje sur re\u0301flexions",
+            "url":"2020-11-29_14-52-28_Refleksje sur re\u0301flexions.jpg",
+            "width":4170
+        },
+        {
             "datetime":"2020-11-23 09:42:11",
             "extension":"jpg",
             "height":3252,
@@ -15,6 +87,30 @@
             "title":"Who do you wanna be II",
             "url":"2020-11-23_09-42-10_Who do you wanna be II.jpg",
             "width":5204
+        },
+        {
+            "datetime":"2020-11-21 14:10:08",
+            "extension":"wav",
+            "title":"Abstraktiv Klassisch - Wohin -- Fu\u0308r Sylwia Bogacka",
+            "url":"2020-11-21_14-10-08_Abstraktiv Klassisch - Wohin -- Fu\u0308r Sylwia Bogacka.wav"
+        },
+        {
+            "datetime":"2020-11-07 19:10:14",
+            "extension":"wav",
+            "title":"Abstraktiv Klassisch - Klassische Herzrhythmussto\u0308rung -- Fu\u0308r Sylwia Bogacka",
+            "url":"2020-11-07_19-10-14_Abstraktiv Klassisch - Klassische Herzrhythmussto\u0308rung -- Fu\u0308r Sylwia Bogacka.wav"
+        },
+        {
+            "datetime":"2020-11-06 02:55:14",
+            "extension":"wav",
+            "title":"Abstraktiv Klassisch - Fu\u0308r Sylwia -- Fu\u0308r Sylwia Bogacka",
+            "url":"2020-11-06_02-55-14_Abstraktiv Klassisch - Fu\u0308r Sylwia -- Fu\u0308r Sylwia Bogacka.wav"
+        },
+        {
+            "datetime":"2020-10-21 12:55:11",
+            "extension":"wav",
+            "title":"Abstraktiv Klassisch - Am Brunnenrand -- Fu\u0308r Sylwia Bogacka",
+            "url":"2020-10-21_12-55-11_Abstraktiv Klassisch - Am Brunnenrand -- Fu\u0308r Sylwia Bogacka.wav"
         },
         {
             "datetime":"2020-09-24 19:32:12",
@@ -77,8 +173,8 @@
         {
             "datetime":"2020-09-12 19:21:02",
             "extension":"wav",
-            "title":"Wei\u00dfe Molotowcocktails - Chillout -- F\u00fcr Jan Wirth",
-            "url":"2020-09-12_19-21-02_Wei\u00dfe Molotowcocktails - Chillout -- F\u00fcr Jan Wirth.wav"
+            "title":"Wei\u00dfe Molotowcocktails - Chillout -- Fu\u0308r Jan Wirth",
+            "url":"2020-09-12_19-21-02_Wei\u00dfe Molotowcocktails - Chillout -- Fu\u0308r Jan Wirth.wav"
         },
         {
             "datetime":"2020-09-11 14:11:01",
@@ -101,8 +197,8 @@
         {
             "datetime":"2020-07-30 13:12:11",
             "extension":"txt",
-            "title":"Abl\u00f6se - Kein Gedicht",
-            "url":"2020-07-30_13-12-11_Abl\u00f6se - Kein Gedicht.txt"
+            "title":"Ablo\u0308se - Kein Gedicht",
+            "url":"2020-07-30_13-12-11_Ablo\u0308se - Kein Gedicht.txt"
         },
         {
             "datetime":"2020-07-14 01:23:01",
@@ -301,6 +397,18 @@
             "extension":"txt",
             "title":"stete waerme -- Fu\u0308r Eva",
             "url":"2019-02-19_16-12-21_stete waerme -- Fu\u0308r Eva.txt"
+        },
+        {
+            "datetime":"2019-02-17 00:00:01",
+            "extension":"wav",
+            "title":"Siedendes - Synth -- Eva Gillhuber gewidmet",
+            "url":"2019-02-17_00-00-01_Siedendes - Synth -- Eva Gillhuber gewidmet.wav"
+        },
+        {
+            "datetime":"2019-02-17 00:00:01",
+            "extension":"pdf",
+            "title":"Siedendes - Fu\u0308r Klavier -- Eva Gillhuber gewidmet",
+            "url":"2019-02-17_00-00-01_Siedendes - Fu\u0308r Klavier -- Eva Gillhuber gewidmet.pdf"
         },
         {
             "datetime":"2019-01-30 18:49:27",
@@ -649,6 +757,14 @@
             "title":"Down under - Zeichnung 21x29,7cm -- Aktzeichenklasse Rudi Berr",
             "url":"2015-04-16_18-31-40_Down under - Zeichnung 21x29,7cm -- Aktzeichenklasse Rudi Berr.jpg",
             "width":1582
+        },
+        {
+            "datetime":"2014-10-14 21:22:44",
+            "extension":"jpg",
+            "height":5184,
+            "title":"Selbstportrait",
+            "url":"2014-10-14_21-22-44_Selbstportrait.jpg",
+            "width":3456
         },
         {
             "datetime":"2014-02-01 17:06:40",
